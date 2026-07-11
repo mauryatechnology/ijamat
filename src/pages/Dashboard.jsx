@@ -1,23 +1,12 @@
-import { useState } from 'react'
 import { useData } from '../context/DataContext'
 import StatCard from '../components/ui/StatCard'
 import AreaChartWidget from '../components/charts/AreaChart'
 import PieChartWidget from '../components/charts/PieChart'
 import DataTable from '../components/ui/DataTable'
-import { Users, CreditCard, Utensils, DollarSign, Search } from 'lucide-react'
+import { Users, CreditCard, Utensils, DollarSign } from 'lucide-react'
 
 export default function Dashboard() {
-  const { dashboardStats, members, collections } = useData()
-  const [profileSearch, setProfileSearch] = useState('')
-  const [profileResult, setProfileResult] = useState(null)
-
-  const handleProfileSearch = () => {
-    if (!profileSearch) return
-    const found = members.find(m =>
-      m.sabilNo === profileSearch || m.itsId === profileSearch
-    )
-    setProfileResult(found || 'not_found')
-  }
+  const { dashboardStats, collections, members } = useData()
 
   const onlinePaymentColumns = [
     { key: 'date', label: 'Date' },
@@ -34,33 +23,13 @@ export default function Dashboard() {
     <div>
       {/* Stat Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-        {/* Profile Search Card */}
-        <div className="stat-card bg-gradient-to-br from-purple-500 to-purple-700">
-          <h3 className="text-lg font-semibold mb-2">Profile</h3>
-          <p className="text-xs opacity-80 mb-2">Sabil or ITS or Phy.File No.:</p>
-          <div className="flex gap-2">
-            <input
-              type="text"
-              value={profileSearch}
-              onChange={e => setProfileSearch(e.target.value)}
-              onKeyDown={e => e.key === 'Enter' && handleProfileSearch()}
-              placeholder="1012"
-              className="flex-1 px-3 py-1.5 bg-white/20 border border-white/30 rounded text-white placeholder:text-white/50 text-sm outline-none focus:bg-white/30"
-            />
-            <button
-              onClick={handleProfileSearch}
-              className="px-3 py-1.5 bg-white text-purple-700 rounded font-semibold text-sm hover:bg-white/90 transition-colors"
-            >
-              Go!
-            </button>
-          </div>
-          {profileResult && profileResult !== 'not_found' && (
-            <p className="text-xs mt-2 opacity-90">{profileResult.name}</p>
-          )}
-          {profileResult === 'not_found' && (
-            <p className="text-xs mt-2 opacity-70">Not Found</p>
-          )}
-        </div>
+        <StatCard
+          title="Total Members"
+          value={members.length}
+          subtitle={`${members.filter(m => m.hofOrFm === 'HOF').length} Families`}
+          color="purple"
+          icon={Users}
+        />
 
         <StatCard
           title="Total Sabil"
@@ -106,10 +75,10 @@ export default function Dashboard() {
 
       {/* Online Payment Table */}
       <div className="mb-6">
-        <h3 className="text-lg font-semibold text-gray-700 mb-3">Online Payment</h3>
+        <h3 className="text-lg font-semibold text-gray-700 mb-3">Recent Online Payments</h3>
         <DataTable
           columns={onlinePaymentColumns}
-          data={recentOnline}
+          data={recentOnline.slice(0, 5)}
           showFilters={false}
           showExport={false}
           showPagination={false}

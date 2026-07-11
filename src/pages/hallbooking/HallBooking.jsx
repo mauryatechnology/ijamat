@@ -1,17 +1,40 @@
 import { useState } from 'react'
 import { useData } from '../../context/DataContext'
 import { showToast } from '../../components/ui/Toast'
+import FilterPanel from '../../components/ui/FilterPanel'
 import DataTable from '../../components/ui/DataTable'
 import { Home, Plus, Calendar } from 'lucide-react'
+import { formatCurrency } from '../../utils/formatters'
 
 export default function HallBooking() {
   const { hallBookings, dropdownOptions, addBooking } = useData()
   const [showForm, setShowForm] = useState(false)
+  const [filtered, setFiltered] = useState(hallBookings)
+
+  // Form State
   const [form, setForm] = useState({
     venue: '', date: new Date().toISOString().split('T')[0], slot: '',
     bookedBy: '', purpose: '', amount: '', phone: '', addons: []
   })
 
+  // Filter Panel Configuration
+  const filterFields = [
+    { key: 'venue', label: 'Venue', type: 'select', options: dropdownOptions.bookingVenues },
+    { key: 'status', label: 'Status', type: 'select', options: dropdownOptions.bookingStatuses },
+    { key: 'fromDate', label: 'From Date', type: 'date' },
+    { key: 'toDate', label: 'To Date', type: 'date' }
+  ]
+
+  const handleFilter = (values) => {
+    let result = [...hallBookings]
+    if (values.venue) result = result.filter(b => b.venue === values.venue)
+    if (values.status) result = result.filter(b => b.status === values.status)
+    if (values.fromDate) result = result.filter(b => b.date >= values.fromDate)
+    if (values.toDate) result = result.filter(b => b.date <= values.toDate)
+    setFiltered(result)
+  }
+
+  // Form Handling
   const handleChange = (key, value) => setForm(prev => ({ ...prev, [key]: value }))
 
   const toggleAddon = (addon) => {
@@ -24,14 +47,23 @@ export default function HallBooking() {
   const handleSubmit = (e) => {
     e.preventDefault()
     if (!form.venue || !form.date || !form.bookedBy) { showToast('Please fill required fields', 'error'); return }
-    addBooking({ ...form, amount: Number(form.amount) || 0, status: 'Pending' })
+    
+    const newEntry = { 
+      id: Date.now(),
+      ...form, 
+      amount: Number(form.amount) || 0, 
+      status: 'Pending' 
+    }
+    
+    addBooking(newEntry)
+    setFiltered(prev => [newEntry, ...prev])
+    
     showToast('Booking registered successfully!', 'success')
     setShowForm(false)
     setForm({ venue: '', date: new Date().toISOString().split('T')[0], slot: '', bookedBy: '', purpose: '', amount: '', phone: '', addons: [] })
   }
 
-  // Calendar view
-  const currentMonth = new Date(2020, 11) // December 2020
+  // Calendar view (Demo)
   const daysInMonth = new Date(2020, 12, 0).getDate()
   const firstDay = new Date(2020, 11, 1).getDay()
   const calendarDays = []
@@ -44,38 +76,70 @@ export default function HallBooking() {
     return hallBookings.filter(b => b.date === dateStr)
   }
 
+  // Table Columns
+  const columns = [
+    { key: 'date', label: 'Date' },
+    { key: 'venue', label: 'Venue' },
+    { key: 'slot', label: 'Slot' },
+    { key: 'bookedBy', label: 'Booked By' },
+    { key: 'purpose', label: 'Purpose' },
+    { key: 'amount', label: 'Amount', render: v => formatCurrency(v) },
+    { key: 'status', label: 'Status', render: v => (
+      <span className={`badge ${v === 'Confirmed' ? 'badge-success' : v === 'Pending' ? 'badge-warning' : 'badge-danger'}`}>{v}</span>
+    )},
+    { key: 'addons', label: 'Add-ons', render: v => Array.isArray(v) ? v.join(', ') : '' },
+    { key: 'phone', label: 'Phone' }
+  ]
+
   return (
     <div>
-      <h2 className="page-header"><Home size={22} /> Hall Booking</h2>
+      <h2 className="page-header"><Home size={22} /> Hall Booking Management</h2>
 
       <div className="mb-4">
         <button onClick={() => setShowForm(!showForm)} className="btn btn-danger">
-          <Plus size={14} /> New Booking
+          <Plus size={14} /> {showForm ? 'Cancel Booking' : 'New Booking'}
         </button>
       </div>
 
       {showForm && (
-        <div className="card mb-4">
-          <h3 className="text-base font-semibold mb-3">New Booking Registration</h3>
+        <div className="card mb-6">
+          <h3 className="text-sm font-semibold text-gray-700 mb-4 border-b pb-2">New Booking Registration</h3>
           <form onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4">
-              <div className="form-group"><label className="form-label">Venue *:</label>
+              <div className="form-group">
+                <label className="form-label">Venue *:</label>
                 <select value={form.venue} onChange={e => handleChange('venue', e.target.value)} className="form-select">
                   <option value="">Select Venue</option>
                   {dropdownOptions.bookingVenues.map(v => <option key={v} value={v}>{v}</option>)}
                 </select>
               </div>
-              <div className="form-group"><label className="form-label">Date *:</label><input type="date" value={form.date} onChange={e => handleChange('date', e.target.value)} className="form-input" /></div>
-              <div className="form-group"><label className="form-label">Slot:</label>
+              <div className="form-group">
+                <label className="form-label">Date *:</label>
+                <input type="date" value={form.date} onChange={e => handleChange('date', e.target.value)} className="form-input" />
+              </div>
+              <div className="form-group">
+                <label className="form-label">Slot:</label>
                 <select value={form.slot} onChange={e => handleChange('slot', e.target.value)} className="form-select">
                   <option value="">Select Slot</option>
                   {dropdownOptions.bookingSlots.map(s => <option key={s} value={s}>{s}</option>)}
                 </select>
               </div>
-              <div className="form-group"><label className="form-label">Booked By *:</label><input type="text" value={form.bookedBy} onChange={e => handleChange('bookedBy', e.target.value)} className="form-input" /></div>
-              <div className="form-group"><label className="form-label">Purpose:</label><input type="text" value={form.purpose} onChange={e => handleChange('purpose', e.target.value)} className="form-input" /></div>
-              <div className="form-group"><label className="form-label">Amount:</label><input type="number" value={form.amount} onChange={e => handleChange('amount', e.target.value)} className="form-input" placeholder="0" /></div>
-              <div className="form-group"><label className="form-label">Phone:</label><input type="tel" value={form.phone} onChange={e => handleChange('phone', e.target.value)} className="form-input" /></div>
+              <div className="form-group">
+                <label className="form-label">Booked By *:</label>
+                <input type="text" value={form.bookedBy} onChange={e => handleChange('bookedBy', e.target.value)} className="form-input" />
+              </div>
+              <div className="form-group">
+                <label className="form-label">Purpose:</label>
+                <input type="text" value={form.purpose} onChange={e => handleChange('purpose', e.target.value)} className="form-input" />
+              </div>
+              <div className="form-group">
+                <label className="form-label">Amount (₹):</label>
+                <input type="number" value={form.amount} onChange={e => handleChange('amount', e.target.value)} className="form-input" placeholder="0" />
+              </div>
+              <div className="form-group">
+                <label className="form-label">Phone:</label>
+                <input type="tel" value={form.phone} onChange={e => handleChange('phone', e.target.value)} className="form-input" />
+              </div>
               <div className="form-group md:col-span-2">
                 <label className="form-label">Add-ons:</label>
                 <div className="flex flex-wrap gap-3 mt-1">
@@ -88,17 +152,16 @@ export default function HallBooking() {
                 </div>
               </div>
             </div>
-            <div className="mt-4 flex gap-3">
+            <div className="mt-5">
               <button type="submit" className="btn btn-info">Register Booking</button>
-              <button type="button" onClick={() => setShowForm(false)} className="btn bg-gray-200 text-gray-700">Cancel</button>
             </div>
           </form>
         </div>
       )}
 
       {/* Calendar View */}
-      <div className="card">
-        <h3 className="text-base font-semibold mb-3 flex items-center gap-2"><Calendar size={18} /> December 2020</h3>
+      <div className="card mb-6">
+        <h3 className="text-base font-semibold mb-3 flex items-center gap-2"><Calendar size={18} /> December 2020 Overview</h3>
         <div className="grid grid-cols-7 gap-1">
           {['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map(day => (
             <div key={day} className="text-center text-xs font-semibold text-gray-500 py-2">{day}</div>
@@ -126,6 +189,10 @@ export default function HallBooking() {
           })}
         </div>
       </div>
+
+      {/* List / Report */}
+      <FilterPanel fields={filterFields} onFilter={handleFilter} submitLabel="Filter Bookings" />
+      <DataTable columns={columns} data={filtered} title="Booking_Records" showColumnToggle />
     </div>
   )
 }

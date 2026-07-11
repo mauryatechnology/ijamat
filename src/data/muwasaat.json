@@ -1,8 +1,0 @@
-[
-  {"id":1,"date":"2020-11-16","by":"Mohd Hussain bhai Rangwala","issuedTo":"Sakina bai Udaipurwala","code":"MW-001","forPurpose":"Medical Aid","amount":5000,"mode":"Cash","chequeNo":"","chequeName":"","status":"Completed"},
-  {"id":2,"date":"2020-11-17","by":"Mohd Hussain bhai Rangwala","issuedTo":"Hakimuddin bhai Badri","code":"MW-002","forPurpose":"Education Support","amount":3000,"mode":"Cash","chequeNo":"","chequeName":"","status":"Completed"},
-  {"id":3,"date":"2020-11-18","by":"Akbarali bhai Udaipurwala","issuedTo":"Umme Salama bai Jasdanwala","code":"MW-003","forPurpose":"Education Fees","amount":8000,"mode":"Cheque","chequeNo":"CHQ-4521","chequeName":"SBI","status":"Completed"},
-  {"id":4,"date":"2020-11-19","by":"Mohd Hussain bhai Rangwala","issuedTo":"Yusuf bhai Kamliwala","code":"MW-004","forPurpose":"Medical Emergency","amount":10000,"mode":"Cash","chequeNo":"","chequeName":"","status":"Pending"},
-  {"id":5,"date":"2020-11-20","by":"Akbarali bhai Udaipurwala","issuedTo":"Naeem bhai Asgarali","code":"MW-005","forPurpose":"Living Expenses","amount":4000,"mode":"Cash","chequeNo":"","chequeName":"","status":"Completed"},
-  {"id":6,"date":"2020-11-21","by":"Mohd Hussain bhai Rangwala","issuedTo":"Ruqaiya bai Contractor","code":"MW-006","forPurpose":"Medical Treatment","amount":7000,"mode":"Bank Transfer","chequeNo":"","chequeName":"","status":"Completed"}
-]

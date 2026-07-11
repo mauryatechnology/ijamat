@@ -2,12 +2,10 @@ import { useState } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import { useSidebar } from '../../context/SidebarContext'
 import {
-  LayoutDashboard, BookOpen, TrendingUp, GraduationCap, Monitor,
-  Users, Wallet, Globe, Scale, Utensils, BarChart3, Building,
-  Heart, Home, Smartphone, Settings, LogOut, ChevronDown,
-  ChevronRight, Search, Menu, FileText, Send, MessageSquare,
-  UserPlus, List, DollarSign, CreditCard, BookOpenCheck,
-  ClipboardList, PieChart, Calendar, Key, FolderOpen
+  LayoutDashboard, Users, Wallet, Utensils, Home, 
+  Settings, LogOut, ChevronDown, Menu, MessageSquare,
+  FileText, UserPlus, List, DollarSign, CreditCard,
+  ClipboardList, Key
 } from 'lucide-react'
 import { useAuth } from '../../context/AuthContext'
 
@@ -19,141 +17,12 @@ const menuConfig = [
     path: '/dashboard'
   },
   {
-    key: 'deeniyah',
-    label: 'Deeniyah - Religious Affairs',
-    icon: BookOpen,
-    children: [
-      {
-        key: 'deeniyah-amal',
-        label: 'Amal Report',
-        icon: FileText,
-        children: [
-          { key: 'amal-summary', label: 'Summary', path: '/deeniyah/amal-report' },
-          { key: 'amal-detail', label: 'Detail List', path: '/deeniyah/amal-report?view=detail' }
-        ]
-      },
-      { key: 'wafat', label: 'Wafat Update', icon: ClipboardList, path: '/deeniyah/wafat-update' }
-    ]
-  },
-  {
-    key: 'marafiq',
-    label: 'Marafiq Burhaniyah - Upliftment',
-    icon: TrendingUp,
-    children: [
-      {
-        key: 'muwasaat',
-        label: 'Muwasaat',
-        icon: Heart,
-        children: [
-          { key: 'muwasaat-entry', label: 'Entry', path: '/marafiq/muwasaat-entry' },
-          { key: 'muwasaat-report', label: 'Report', path: '/marafiq/muwasaat-report' }
-        ]
-      }
-    ]
-  },
-  {
-    key: 'talimiyah',
-    label: 'Talimiyah - Education Affairs',
-    icon: GraduationCap,
-    children: [
-      { key: 'sabaq', label: 'Sabaq Attendance Report', icon: BookOpenCheck, path: '/talimiyah/sabaq-attendance' }
-    ]
-  },
-  {
-    key: 'dakheliyah',
-    label: 'Dakheliyah - Internal Affairs',
-    icon: Monitor,
-    children: [
-      {
-        key: 'messaging',
-        label: 'Messaging',
-        icon: MessageSquare,
-        children: [
-          { key: 'send-all', label: 'Send to All', path: '/dakheliyah/send-message' },
-          { key: 'msg-report', label: 'Report', path: '/dakheliyah/message-report' }
-        ]
-      }
-    ]
-  },
-  {
-    key: 'mawareed',
-    label: 'Mawareed bashariya - HR',
+    key: 'members',
+    label: 'Members',
     icon: Users,
     children: [
-      {
-        key: 'groups',
-        label: 'Group / Committees',
-        icon: Users,
-        children: [
-          { key: 'add-member', label: 'Add Member', path: '/mawareed/add-member' },
-          { key: 'member-list', label: 'Member List', path: '/mawareed/member-list' }
-        ]
-      }
-    ]
-  },
-  {
-    key: 'maliyah',
-    label: 'Maliyah - Accounts/Budget',
-    icon: Wallet,
-    children: [
-      {
-        key: 'accounts',
-        label: 'Accounts',
-        icon: DollarSign,
-        children: [
-          {
-            key: 'entry',
-            label: 'Entry',
-            children: [
-              { key: 'daily-collection', label: 'Daily Collection', path: '/maliyah/daily-collection' },
-              { key: 'voucher-entry', label: 'Voucher Entry', path: '/maliyah/voucher-entry' }
-            ]
-          },
-          {
-            key: 'reports',
-            label: 'Reports',
-            children: [
-              { key: 'ind-ledger', label: 'Individual Ledger', path: '/maliyah/individual-ledger' },
-              { key: 'coll-report', label: 'Collection Report', path: '/maliyah/collection-report' },
-              { key: 'due-list', label: 'Due List', path: '/maliyah/due-list' },
-              { key: 'day-book', label: 'Day Book', path: '/maliyah/day-book' }
-            ]
-          },
-          {
-            key: 'utility',
-            label: 'Utility',
-            children: [
-              { key: 'hof-list', label: 'HOF List', path: '/maliyah/hof-list' },
-              { key: 'mumineen', label: 'Mumineen Filter', path: '/maliyah/mumineen-filter' }
-            ]
-          }
-        ]
-      },
-      {
-        key: 'sabil-menu',
-        label: 'Sabil',
-        icon: CreditCard,
-        children: [
-          { key: 'sabil-entry', label: 'Sabil Entry', path: '/maliyah/sabil-entry' },
-          { key: 'sabil-report', label: 'Sabil Report', path: '/maliyah/sabil-report' }
-        ]
-      }
-    ]
-  },
-  {
-    key: 'kharejiyah',
-    label: 'Kharejiyah - PR',
-    icon: Globe,
-    children: [
-      { key: 'khar-report', label: 'Report', icon: FileText, path: '/kharejiyah/report' }
-    ]
-  },
-  {
-    key: 'qaza',
-    label: 'Qaza - Legal Affairs',
-    icon: Scale,
-    children: [
-      { key: 'qaza-report', label: 'Umoor Qaza Report', icon: FileText, path: '/qaza/report' }
+      { key: 'member-list', label: 'Member List', path: '/members' },
+      { key: 'add-member', label: 'Add Member', path: '/members/add' }
     ]
   },
   {
@@ -161,71 +30,35 @@ const menuConfig = [
     label: 'FMB / Niyaz',
     icon: Utensils,
     children: [
-      {
-        key: 'fmb-master',
-        label: 'FMB Master',
-        icon: FolderOpen,
-        children: [
-          { key: 'thali-entry', label: 'Thali Master Entry', path: '/fmb/thali-master' },
-          { key: 'thali-report', label: 'Thali Report', path: '/fmb/thali-report' }
-        ]
-      },
-      {
-        key: 'menu',
-        label: 'Menu',
-        icon: List,
-        children: [
-          { key: 'menu-manage', label: 'Add / Edit Menu', path: '/fmb/menu-manage' },
-          { key: 'menu-report', label: 'Menu Report', path: '/fmb/menu-report' }
-        ]
-      }
+      { key: 'thali', label: 'Thali', path: '/fmb/thali' },
+      { key: 'menu', label: 'Menu', path: '/fmb/menu' }
     ]
   },
   {
-    key: 'iqtesadiyah',
-    label: 'Iqtesadiyah - Finance & Business',
-    icon: BarChart3,
+    key: 'finance',
+    label: 'Finance',
+    icon: Wallet,
     children: [
-      { key: 'qardan', label: 'Qardan Hasana', icon: PieChart, path: '/iqtesadiyah/qardan-hasana' }
-    ]
-  },
-  {
-    key: 'amlaak',
-    label: 'Amlaak - Waqf / Properties',
-    icon: Building,
-    children: [
-      { key: 'properties', label: 'Property List', icon: Building, path: '/iqtesadiyah/qardan-hasana' }
-    ]
-  },
-  {
-    key: 'sehat',
-    label: 'Sehat - Health Affairs',
-    icon: Heart,
-    children: [
-      { key: 'doctors', label: 'Doctors Directory', icon: UserPlus, path: '/sehat/doctors-directory' }
+      { key: 'collections', label: 'Collections', path: '/finance/collections' },
+      { key: 'sabil', label: 'Sabil', path: '/finance/sabil' },
+      { key: 'dues', label: 'Due List', path: '/finance/dues' }
     ]
   },
   {
     key: 'hallbooking',
     label: 'Hall Booking',
     icon: Home,
-    children: [
-      { key: 'booking-reg', label: 'Registration', icon: Calendar, path: '/hall-booking/booking' },
-      { key: 'booking-report', label: 'Report', icon: FileText, path: '/hall-booking/report' }
-    ]
+    path: '/hall-booking'
   },
   {
-    key: 'app',
-    label: 'App',
-    icon: Smartphone,
-    children: [
-      { key: 'install-summary', label: 'Install Summary', icon: PieChart, path: '/app/install-summary' },
-      { key: 'rsvp', label: 'RSVP Report', icon: ClipboardList, path: '/app/rsvp-report' }
-    ]
+    key: 'messages',
+    label: 'Messages',
+    icon: MessageSquare,
+    path: '/messages'
   },
   {
     key: 'tools',
-    label: 'Tools',
+    label: 'Settings',
     icon: Settings,
     children: [
       { key: 'change-pwd', label: 'Change Password', icon: Key, path: '/tools/change-password' }
@@ -242,11 +75,6 @@ function MenuItem({ item, depth = 0 }) {
   const isActive = item.path && location.pathname === item.path
   const isChildActive = hasChildren && item.children.some(child => {
     if (child.path && location.pathname === child.path) return true
-    if (child.children) return child.children.some(gc => {
-      if (gc.path && location.pathname === gc.path) return true
-      if (gc.children) return gc.children.some(ggc => location.pathname === ggc.path)
-      return false
-    })
     return false
   })
 
@@ -277,7 +105,7 @@ function MenuItem({ item, depth = 0 }) {
           <div
             className="sidebar-submenu"
             style={{
-              maxHeight: isOpen ? '1000px' : '0',
+              maxHeight: isOpen ? '500px' : '0',
               opacity: isOpen ? 1 : 0
             }}
           >
@@ -306,28 +134,11 @@ function MenuItem({ item, depth = 0 }) {
 export default function Sidebar() {
   const { isCollapsed, toggleSidebar } = useSidebar()
   const { logout } = useAuth()
-  const [search, setSearch] = useState('')
-
-  const filteredMenu = search
-    ? menuConfig.filter(item => {
-        const label = item.label.toLowerCase()
-        const q = search.toLowerCase()
-        if (label.includes(q)) return true
-        if (item.children) {
-          return item.children.some(c => {
-            if (c.label.toLowerCase().includes(q)) return true
-            if (c.children) return c.children.some(gc => gc.label.toLowerCase().includes(q))
-            return false
-          })
-        }
-        return false
-      })
-    : menuConfig
 
   return (
     <aside
       className={`fixed top-0 left-0 h-screen z-50 flex flex-col transition-all duration-300 ${
-        isCollapsed ? 'w-[60px]' : 'w-[270px]'
+        isCollapsed ? 'w-[60px]' : 'w-[250px]'
       }`}
       style={{ background: 'linear-gradient(180deg, #1e2a3a 0%, #263544 100%)' }}
     >
@@ -347,25 +158,9 @@ export default function Sidebar() {
         </button>
       </div>
 
-      {/* Search */}
-      {!isCollapsed && (
-        <div className="px-3 py-2">
-          <div className="relative">
-            <Search size={14} className="absolute left-2.5 top-1/2 -translate-y-1/2 text-white/40" />
-            <input
-              type="text"
-              placeholder="Search..."
-              value={search}
-              onChange={e => setSearch(e.target.value)}
-              className="w-full pl-8 pr-3 py-1.5 bg-white/10 border border-white/10 rounded text-white text-xs placeholder:text-white/40 outline-none focus:border-blue-400/50"
-            />
-          </div>
-        </div>
-      )}
-
       {/* Menu */}
-      <nav className="flex-1 overflow-y-auto overflow-x-hidden py-1">
-        {filteredMenu.map(item => (
+      <nav className="flex-1 overflow-y-auto overflow-x-hidden py-3">
+        {menuConfig.map(item => (
           <MenuItem key={item.key} item={item} depth={0} />
         ))}
       </nav>
@@ -374,7 +169,7 @@ export default function Sidebar() {
       <div className="border-t border-white/10">
         <button
           onClick={logout}
-          className="sidebar-item w-full text-red-400 hover:text-red-300 hover:bg-red-500/10"
+          className="sidebar-item w-full text-red-400 hover:text-red-300 hover:bg-red-500/10 py-4"
         >
           <LogOut size={18} className="shrink-0" />
           {!isCollapsed && <span>Logout</span>}
