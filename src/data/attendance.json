@@ -1,0 +1,10 @@
+[
+  {"id":1,"date":"2020-11-16","group":"Sabaq Group A","type":"Quran","presentCount":12,"totalCount":15,"absentees":["Umme Salama bai Jasdanwala","Irfan bhai Zoeb Jr.","Sakina bai Indorewala"]},
+  {"id":2,"date":"2020-11-17","group":"Sabaq Group B","type":"Deeni Taalim","presentCount":8,"totalCount":10,"absentees":["Mufaddal bhai Ezzi Jr.","Taher bhai Saifuddin Jr."]},
+  {"id":3,"date":"2020-11-18","group":"Sabaq Group A","type":"Quran","presentCount":14,"totalCount":15,"absentees":["Umme Salama bai Jasdanwala"]},
+  {"id":4,"date":"2020-11-19","group":"Sabaq Group B","type":"Hifzul Quran","presentCount":9,"totalCount":10,"absentees":["Taher bhai Saifuddin Jr."]},
+  {"id":5,"date":"2020-11-20","group":"Sabaq Group A","type":"Quran","presentCount":13,"totalCount":15,"absentees":["Irfan bhai Zoeb Jr.","Sakina bai Indorewala"]},
+  {"id":6,"date":"2020-11-21","group":"Sabaq Group C","type":"Deeni Taalim","presentCount":6,"totalCount":8,"absentees":["Abbas bhai Jr.","Husain bhai Jr."]},
+  {"id":7,"date":"2020-11-22","group":"Sabaq Group A","type":"Quran","presentCount":15,"totalCount":15,"absentees":[]},
+  {"id":8,"date":"2020-11-23","group":"Sabaq Group B","type":"Hifzul Quran","presentCount":10,"totalCount":10,"absentees":[]}
+]

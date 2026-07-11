@@ -1,0 +1,10 @@
+[
+  {"id":1,"code":"D001","name":"Dr. Husain bhai Rangwala","qualification":"MBBS, MD","specialization":"General Medicine","otherDetails":"20+ years experience","availableOn":"Monday, Wednesday, Friday","particularDate":"","priority":1,"phone":"9876500001"},
+  {"id":2,"code":"D002","name":"Dr. Fatema bai Saifuddin","qualification":"BDS, MDS","specialization":"Dentistry","otherDetails":"Cosmetic & Orthodontics","availableOn":"Tuesday, Thursday, Saturday","particularDate":"","priority":2,"phone":"9876500002"},
+  {"id":3,"code":"D003","name":"Dr. Taher bhai Ezzi","qualification":"MBBS, MS (Ortho)","specialization":"Orthopedics","otherDetails":"Joint Replacement Specialist","availableOn":"Monday, Thursday","particularDate":"","priority":3,"phone":"9876500003"},
+  {"id":4,"code":"D004","name":"Dr. Maryam bai Contractor","qualification":"MBBS, DGO","specialization":"Gynecology","otherDetails":"High-risk pregnancy care","availableOn":"Tuesday, Friday, Saturday","particularDate":"","priority":4,"phone":"9876500004"},
+  {"id":5,"code":"D005","name":"Dr. Qaidjoher bhai Lukmani","qualification":"MBBS, DCH","specialization":"Pediatrics","otherDetails":"Neonatal care specialist","availableOn":"Monday, Wednesday, Saturday","particularDate":"","priority":5,"phone":"9876500005"},
+  {"id":6,"code":"D006","name":"Dr. Sakina bai Petiwala","qualification":"BHMS","specialization":"Homeopathy","otherDetails":"Chronic disease management","availableOn":"Daily except Sunday","particularDate":"","priority":6,"phone":"9876500006"},
+  {"id":7,"code":"D007","name":"Dr. Abbas bhai Indorewala","qualification":"MBBS, MD (Derma)","specialization":"Dermatology","otherDetails":"Skin & Hair specialist","availableOn":"Wednesday, Saturday","particularDate":"","priority":7,"phone":"9876500007"},
+  {"id":8,"code":"D008","name":"Dr. Burhanuddin bhai Kamliwala","qualification":"BPTh, MPTh","specialization":"Physiotherapy","otherDetails":"Sports injury & rehabilitation","availableOn":"Monday to Friday","particularDate":"","priority":8,"phone":"9876500008"}
+]

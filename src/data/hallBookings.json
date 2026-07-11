@@ -1,0 +1,10 @@
+[
+  {"id":1,"venue":"Community Hall","date":"2020-12-05","slot":"Morning (8AM-12PM)","bookedBy":"Mohd Hussain bhai Rangwala","purpose":"Family Function","status":"Confirmed","amount":5000,"addons":["AC","Sound System"],"phone":"9876543210"},
+  {"id":2,"venue":"Community Hall","date":"2020-12-10","slot":"Full Day","bookedBy":"Akbarali bhai Udaipurwala","purpose":"Niyaz Jaman","status":"Confirmed","amount":8000,"addons":["AC","Sound System","Decoration"],"phone":"9876543212"},
+  {"id":3,"venue":"Masjid Hall","date":"2020-12-15","slot":"Evening (4PM-10PM)","bookedBy":"Taher bhai Saifuddin","purpose":"Milad Function","status":"Confirmed","amount":3000,"addons":["Sound System"],"phone":"9876543216"},
+  {"id":4,"venue":"Community Hall","date":"2020-12-20","slot":"Morning (8AM-12PM)","bookedBy":"Mustafa bhai Hakimuddin","purpose":"Sports Event","status":"Pending","amount":4000,"addons":["AC"],"phone":"9876543218"},
+  {"id":5,"venue":"Guest Room 1","date":"2020-12-08","slot":"2 Nights","bookedBy":"Burhanuddin bhai Contractor","purpose":"Guest Stay","status":"Confirmed","amount":1500,"addons":[],"phone":"9876543220"},
+  {"id":6,"venue":"Community Hall","date":"2020-12-25","slot":"Evening (4PM-10PM)","bookedBy":"Abbas bhai Rampurwala","purpose":"Mehndi Function","status":"Cancelled","amount":6000,"addons":["AC","Sound System","Decoration","Catering"],"phone":"9876543224"},
+  {"id":7,"venue":"Masjid Hall","date":"2021-01-01","slot":"Full Day","bookedBy":"Shabbir bhai Lukmani","purpose":"Annual Program","status":"Pending","amount":5000,"addons":["Sound System","Decoration"],"phone":"9876543227"},
+  {"id":8,"venue":"Community Hall","date":"2021-01-05","slot":"Afternoon (12PM-5PM)","bookedBy":"Qaidjoher bhai Indorewala","purpose":"Workshop","status":"Confirmed","amount":3500,"addons":["AC","Projector"],"phone":"9876543221"}
+]

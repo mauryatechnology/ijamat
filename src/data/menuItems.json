@@ -1,0 +1,12 @@
+[
+  {"id":1,"eventDate":"2020-11-16","dishes":["Dal Chawal","Kheema","Roti","Raita","Salad"],"cost":4500,"thaliCount":28,"feedback":"Good","rating":4},
+  {"id":2,"eventDate":"2020-11-17","dishes":["Biryani","Raita","Papad","Sweet"],"cost":6200,"thaliCount":30,"feedback":"Excellent","rating":5},
+  {"id":3,"eventDate":"2020-11-18","dishes":["Khichdi","Kadhi","Roti","Pickle","Buttermilk"],"cost":3800,"thaliCount":26,"feedback":"Average","rating":3},
+  {"id":4,"eventDate":"2020-11-19","dishes":["Paneer Masala","Dal Fry","Jeera Rice","Roti","Gulab Jamun"],"cost":5500,"thaliCount":29,"feedback":"Very Good","rating":4},
+  {"id":5,"eventDate":"2020-11-20","dishes":["Chicken Curry","Pulao","Naan","Salad","Firni"],"cost":7000,"thaliCount":30,"feedback":"Excellent","rating":5},
+  {"id":6,"eventDate":"2020-11-21","dishes":["Chole","Puri","Rice","Papad","Sweet"],"cost":4200,"thaliCount":27,"feedback":"Good","rating":4},
+  {"id":7,"eventDate":"2020-11-22","dishes":["Mutton Korma","Biryani","Raita","Kheer"],"cost":8500,"thaliCount":30,"feedback":"Outstanding","rating":5},
+  {"id":8,"eventDate":"2020-11-23","dishes":["Mixed Veg","Dal Tadka","Roti","Rice","Pickle"],"cost":3500,"thaliCount":25,"feedback":"Average","rating":3},
+  {"id":9,"eventDate":"2020-11-24","dishes":["Fish Curry","Jeera Rice","Roti","Salad","Seviyan"],"cost":6800,"thaliCount":28,"feedback":"Very Good","rating":4},
+  {"id":10,"eventDate":"2020-11-25","dishes":["Keema Samosa","Dal Makhani","Pulao","Naan","Ice Cream"],"cost":7200,"thaliCount":30,"feedback":"Excellent","rating":5}
+]

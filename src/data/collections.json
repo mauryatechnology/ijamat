@@ -1,0 +1,22 @@
+[
+  {"id":1,"date":"2020-11-16","receiptNo":"VC-001","sabilNo":"1","name":"Mohd Hussain bhai Rangwala","head":"Barkat-E-Burhaniyah","amount":2500,"mode":"Cash","collectedBy":"Akbar bhai Rampura wala","session":"2017-2018","remarks":""},
+  {"id":2,"date":"2020-11-16","receiptNo":"VC-002","sabilNo":"3","name":"Alihusain bhai Jasdanwala","head":"Barkat-E-Burhaniyah","amount":3000,"mode":"Cash","collectedBy":"Akbar bhai Rampura wala","session":"2017-2018","remarks":"Monthly"},
+  {"id":3,"date":"2020-11-16","receiptNo":"VC-003","sabilNo":"5","name":"Taher bhai Saifuddin","head":"Husain Scheme","amount":5000,"mode":"Cheque","collectedBy":"Akbar bhai Rampura wala","session":"2017-2018","remarks":""},
+  {"id":4,"date":"2020-11-17","receiptNo":"VC-004","sabilNo":"2","name":"Akbarali bhai Udaipurwala","head":"Barkat-E-Burhaniyah","amount":1500,"mode":"Cash","collectedBy":"Akbar bhai Rampura wala","session":"2017-2018","remarks":""},
+  {"id":5,"date":"2020-11-17","receiptNo":"VC-005","sabilNo":"7","name":"Burhanuddin bhai Contractor","head":"FMB","amount":4500,"mode":"Cash","collectedBy":"Akbar bhai Rampura wala","session":"2017-2018","remarks":"Quarterly"},
+  {"id":6,"date":"2020-11-17","receiptNo":"VC-006","sabilNo":"10","name":"Abbas bhai Rampurwala","head":"Barkat-E-Burhaniyah","amount":2000,"mode":"UPI","collectedBy":"Akbar bhai Rampura wala","session":"2017-2018","remarks":""},
+  {"id":7,"date":"2020-11-17","receiptNo":"VC-007","sabilNo":"14","name":"Juzer bhai Petiwala","head":"Husain Scheme","amount":3500,"mode":"Cash","collectedBy":"Akbar bhai Rampura wala","session":"2017-2018","remarks":""},
+  {"id":8,"date":"2020-11-18","receiptNo":"VC-008","sabilNo":"6","name":"Mustafa bhai Hakimuddin","head":"FMB","amount":1200,"mode":"Cash","collectedBy":"Akbar bhai Rampura wala","session":"2017-2018","remarks":""},
+  {"id":9,"date":"2020-11-18","receiptNo":"VC-009","sabilNo":"8","name":"Qaidjoher bhai Indorewala","head":"Barkat-E-Burhaniyah","amount":800,"mode":"Cash","collectedBy":"Akbar bhai Rampura wala","session":"2017-2018","remarks":"Partial"},
+  {"id":10,"date":"2020-11-18","receiptNo":"VC-010","sabilNo":"12","name":"Shabbir bhai Lukmani","head":"Niyaz","amount":2200,"mode":"Cash","collectedBy":"Akbar bhai Rampura wala","session":"2017-2018","remarks":""},
+  {"id":11,"date":"2020-11-19","receiptNo":"VC-011","sabilNo":"4","name":"Irfan bhai Zoeb","head":"Barkat-E-Burhaniyah","amount":1800,"mode":"Cash","collectedBy":"Akbar bhai Rampura wala","session":"2017-2018","remarks":""},
+  {"id":12,"date":"2020-11-19","receiptNo":"VC-012","sabilNo":"9","name":"Yusuf bhai Kamliwala","head":"FMB","amount":4100,"mode":"Cheque","collectedBy":"Akbar bhai Rampura wala","session":"2017-2018","remarks":""},
+  {"id":13,"date":"2020-11-19","receiptNo":"VC-013","sabilNo":"15","name":"Husain bhai Nooruddin","head":"Husain Scheme","amount":2700,"mode":"Cash","collectedBy":"Akbar bhai Rampura wala","session":"2017-2018","remarks":""},
+  {"id":14,"date":"2020-11-19","receiptNo":"VC-014","sabilNo":"16","name":"Mufaddal bhai Ezzi","head":"Barkat-E-Burhaniyah","amount":3200,"mode":"UPI","collectedBy":"Akbar bhai Rampura wala","session":"2017-2018","remarks":""},
+  {"id":15,"date":"2020-11-20","receiptNo":"VC-015","sabilNo":"11","name":"Hakimuddin bhai Badri","head":"FMB","amount":900,"mode":"Cash","collectedBy":"Akbar bhai Rampura wala","session":"2017-2018","remarks":""},
+  {"id":16,"date":"2020-11-20","receiptNo":"VC-016","sabilNo":"13","name":"Naeem bhai Asgarali","head":"Niyaz","amount":1500,"mode":"Cash","collectedBy":"Akbar bhai Rampura wala","session":"2017-2018","remarks":""},
+  {"id":17,"date":"2020-11-20","receiptNo":"VC-017","sabilNo":"1","name":"Mohd Hussain bhai Rangwala","head":"FMB","amount":3800,"mode":"Cash","collectedBy":"Akbar bhai Rampura wala","session":"2017-2018","remarks":""},
+  {"id":18,"date":"2020-11-21","receiptNo":"VC-018","sabilNo":"5","name":"Taher bhai Saifuddin","head":"Barkat-E-Burhaniyah","amount":5000,"mode":"Bank Transfer","collectedBy":"Akbar bhai Rampura wala","session":"2017-2018","remarks":"Full payment"},
+  {"id":19,"date":"2020-11-21","receiptNo":"VC-019","sabilNo":"7","name":"Burhanuddin bhai Contractor","head":"Niyaz","amount":2000,"mode":"Cash","collectedBy":"Akbar bhai Rampura wala","session":"2017-2018","remarks":""},
+  {"id":20,"date":"2020-11-21","receiptNo":"VC-020","sabilNo":"10","name":"Abbas bhai Rampurwala","head":"Husain Scheme","amount":4500,"mode":"Cash","collectedBy":"Akbar bhai Rampura wala","session":"2017-2018","remarks":""}
+]

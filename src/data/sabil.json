@@ -1,0 +1,20 @@
+[
+  {"id":1,"sabilNo":"1","itsId":"40493729","name":"Mohd Hussain bhai Rangwala","type":"Regular","mohalla":"Saifee Mohalla","sector":"Mohammedi","takhmeen":12000,"openingBalance":0,"status":"Active","startDate":"2017-04-01"},
+  {"id":2,"sabilNo":"2","itsId":"40621810","name":"Akbarali bhai Udaipurwala","type":"Regular","mohalla":"Najmi Mohalla","sector":"Mohammedi","takhmeen":15000,"openingBalance":2500,"status":"Active","startDate":"2017-04-01"},
+  {"id":3,"sabilNo":"3","itsId":"40673390","name":"Alihusain bhai Jasdanwala","type":"Regular","mohalla":"Fakhri Mohalla","sector":"Mohammedi","takhmeen":18000,"openingBalance":0,"status":"Active","startDate":"2017-04-01"},
+  {"id":4,"sabilNo":"4","itsId":"60681946","name":"Irfan bhai Zoeb","type":"Regular","mohalla":"Hakimi Mohalla","sector":"Mohammedi","takhmeen":10000,"openingBalance":1000,"status":"Active","startDate":"2017-04-01"},
+  {"id":5,"sabilNo":"5","itsId":"30456789","name":"Taher bhai Saifuddin","type":"Regular","mohalla":"Taheri Mohalla","sector":"Mohammedi","takhmeen":20000,"openingBalance":0,"status":"Active","startDate":"2017-04-01"},
+  {"id":6,"sabilNo":"6","itsId":"50789123","name":"Mustafa bhai Hakimuddin","type":"Regular","mohalla":"Saifee Mohalla","sector":"Mohammedi","takhmeen":14000,"openingBalance":500,"status":"Active","startDate":"2017-04-01"},
+  {"id":7,"sabilNo":"7","itsId":"70123456","name":"Burhanuddin bhai Contractor","type":"Regular","mohalla":"Najmi Mohalla","sector":"Mohammedi","takhmeen":16000,"openingBalance":0,"status":"Active","startDate":"2017-04-01"},
+  {"id":8,"sabilNo":"8","itsId":"80234567","name":"Qaidjoher bhai Indorewala","type":"Regular","mohalla":"Fakhri Mohalla","sector":"Mohammedi","takhmeen":11000,"openingBalance":3000,"status":"Active","startDate":"2017-04-01"},
+  {"id":9,"sabilNo":"9","itsId":"90345678","name":"Yusuf bhai Kamliwala","type":"Regular","mohalla":"Hakimi Mohalla","sector":"Mohammedi","takhmeen":13000,"openingBalance":0,"status":"Active","startDate":"2017-04-01"},
+  {"id":10,"sabilNo":"10","itsId":"10456789","name":"Abbas bhai Rampurwala","type":"Regular","mohalla":"Saifee Mohalla","sector":"Mohammedi","takhmeen":17000,"openingBalance":1500,"status":"Active","startDate":"2017-04-01"},
+  {"id":11,"sabilNo":"11","itsId":"20567890","name":"Hakimuddin bhai Badri","type":"Regular","mohalla":"Taheri Mohalla","sector":"Mohammedi","takhmeen":9000,"openingBalance":0,"status":"Active","startDate":"2017-04-01"},
+  {"id":12,"sabilNo":"12","itsId":"30678901","name":"Shabbir bhai Lukmani","type":"Regular","mohalla":"Fakhri Mohalla","sector":"Mohammedi","takhmeen":12500,"openingBalance":0,"status":"Active","startDate":"2017-04-01"},
+  {"id":13,"sabilNo":"13","itsId":"89076543","name":"Naeem bhai Asgarali","type":"Regular","mohalla":"Najmi Mohalla","sector":"Mohammedi","takhmeen":8000,"openingBalance":4000,"status":"Active","startDate":"2017-04-01"},
+  {"id":14,"sabilNo":"14","itsId":"40789012","name":"Juzer bhai Petiwala","type":"Regular","mohalla":"Saifee Mohalla","sector":"Mohammedi","takhmeen":15500,"openingBalance":0,"status":"Active","startDate":"2017-04-01"},
+  {"id":15,"sabilNo":"15","itsId":"50890123","name":"Husain bhai Nooruddin","type":"Regular","mohalla":"Najmi Mohalla","sector":"Mohammedi","takhmeen":11500,"openingBalance":2000,"status":"Active","startDate":"2017-04-01"},
+  {"id":16,"sabilNo":"16","itsId":"71012345","name":"Mufaddal bhai Ezzi","type":"Regular","mohalla":"Hakimi Mohalla","sector":"Mohammedi","takhmeen":19000,"openingBalance":0,"status":"Active","startDate":"2017-04-01"},
+  {"id":17,"sabilNo":"17","itsId":"81123456","name":"Hatim bhai Jamali","type":"Regular Lock/Joint","mohalla":"Fakhri Mohalla","sector":"Mohammedi","takhmeen":0,"openingBalance":0,"status":"Active","startDate":"2017-04-01"},
+  {"id":18,"sabilNo":"18","itsId":"91234567","name":"Idris bhai Kanchwala","type":"Regular Lock/Joint","mohalla":"Saifee Mohalla","sector":"Mohammedi","takhmeen":0,"openingBalance":0,"status":"Active","startDate":"2017-04-01"}
+]

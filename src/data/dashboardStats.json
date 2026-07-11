@@ -1,0 +1,23 @@
+{
+  "totalSabil": 42,
+  "sabilBreakdown": "Regular - 40, Regular Lock/Joint - 2",
+  "totalThali": 30,
+  "thaliBreakdown": "Regular - 30",
+  "todayCollection": 0,
+  "collectionTrend": [
+    {"date": "2020-11-16", "total": 550, "cash": 550},
+    {"date": "2020-11-17", "total": 5200, "cash": 4200},
+    {"date": "2020-11-18", "total": 4200, "cash": 4200},
+    {"date": "2020-11-19", "total": 800, "cash": 800},
+    {"date": "2020-11-19", "total": 4100, "cash": 4100}
+  ],
+  "locationDues": [
+    {"name": "Fakhri Mohalla", "amount": 64500, "percentage": 36.73},
+    {"name": "Najmi Mohalla", "amount": 55000, "percentage": 31.32},
+    {"name": "Saifee Mohalla", "amount": 48200, "percentage": 27.45},
+    {"name": "Hakimi Mohalla", "amount": 7900, "percentage": 4.5},
+    {"name": "Taheri Mohalla", "amount": 0, "percentage": 0}
+  ],
+  "onlinePayments": [],
+  "workingSession": "2017-2018"
+}
