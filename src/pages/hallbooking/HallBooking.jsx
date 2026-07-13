@@ -145,7 +145,7 @@ export default function HallBooking() {
                 <div className="flex flex-wrap gap-3 mt-1">
                   {dropdownOptions.bookingAddons.map(addon => (
                     <label key={addon} className="flex items-center gap-1.5 cursor-pointer text-sm">
-                      <input type="checkbox" checked={form.addons.includes(addon)} onChange={() => toggleAddon(addon)} className="accent-blue-500" />
+                      <input type="checkbox" checked={form.addons.includes(addon)} onChange={() => toggleAddon(addon)} className="accent-primary" />
                       {addon}
                     </label>
                   ))}

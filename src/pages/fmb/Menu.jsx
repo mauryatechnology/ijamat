@@ -110,7 +110,7 @@ export default function Menu() {
       {/* Report / List */}
       <FilterPanel fields={filterFields} onFilter={handleFilter} submitLabel="Filter Records" />
       <div className="flex flex-wrap gap-6 mb-4 text-sm bg-white p-3 rounded-lg shadow-sm border border-gray-100">
-        <span>Total Cost: <strong className="text-blue-600">₹{totalCost.toLocaleString('en-IN')}</strong></span>
+        <span>Total Cost: <strong className="text-primary">₹{totalCost.toLocaleString('en-IN')}</strong></span>
         <span>Total Thalis: <strong className="text-emerald-600">{totalThalis}</strong></span>
         <span>Avg Rating: <strong className="text-amber-600">{avgRating} ⭐</strong></span>
       </div>

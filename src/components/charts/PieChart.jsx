@@ -1,6 +1,6 @@
 import { PieChart as RechartsPie, Pie, Cell, Tooltip, Legend, ResponsiveContainer } from 'recharts'
 
-const COLORS = ['#22c55e', '#a855f7', '#3b82f6', '#ef4444', '#06b6d4', '#eab308', '#f97066']
+const COLORS = ['#880808', '#d4af37', '#262626', '#666666', '#b31e1e', '#f97066', '#eab308']
 
 export default function PieChartWidget({ data, dataKey = 'amount', nameKey = 'name', title }) {
   const total = data.reduce((sum, d) => sum + (d[dataKey] || 0), 0)

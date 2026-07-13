@@ -43,7 +43,7 @@ export default function DueList() {
       <h2 className="page-header"><FileText size={22} /> Due List</h2>
       <FilterPanel fields={filterFields} onFilter={handleFilter} />
       <div className="flex flex-wrap gap-6 mb-3 text-sm">
-        <span>Total Due: <strong className="text-blue-600">{formatCurrency(totalDue)}</strong></span>
+        <span>Total Due: <strong className="text-primary">{formatCurrency(totalDue)}</strong></span>
         <span>Total Paid: <strong className="text-emerald-600">{formatCurrency(totalPaid)}</strong></span>
         <span>Total Balance: <strong className="text-red-600">{formatCurrency(totalBalance)}</strong></span>
       </div>

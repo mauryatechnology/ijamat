@@ -149,7 +149,7 @@ export default function DataTable({
                         type="checkbox"
                         checked={!hiddenCols.has(col.key)}
                         onChange={() => toggleCol(col.key)}
-                        className="accent-blue-500"
+                        className="accent-primary"
                       />
                       {col.label}
                     </label>
@@ -227,7 +227,7 @@ export default function DataTable({
                               type="checkbox"
                               onChange={() => handleFilterChange(col.key, [])}
                               checked={!filters[col.key] || filters[col.key].length === 0}
-                              className="accent-blue-500"
+                              className="accent-primary"
                             /> Clear
                           </label>
                           {col.filterOptions.map(opt => (
@@ -242,7 +242,7 @@ export default function DataTable({
                                     : [...current, opt]
                                   handleFilterChange(col.key, next)
                                 }}
-                                className="accent-blue-500"
+                                className="accent-primary"
                               /> {opt}
                             </label>
                           ))}
@@ -316,7 +316,7 @@ export default function DataTable({
                   onClick={() => setPage(pageNum)}
                   className={`px-3 py-1 rounded border ${
                     page === pageNum
-                      ? 'bg-blue-500 text-white border-blue-500'
+                      ? 'bg-primary text-white border-primary'
                       : 'text-gray-600 hover:bg-gray-100'
                   }`}
                 >{pageNum}</button>

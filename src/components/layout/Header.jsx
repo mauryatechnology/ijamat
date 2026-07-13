@@ -1,6 +1,7 @@
 import { LogOut, Menu } from 'lucide-react'
 import { useAuth } from '../../context/AuthContext'
 import { useSidebar } from '../../context/SidebarContext'
+import Logo from '../ui/Logo'
 
 export default function Header() {
   const { user, logout } = useAuth()
@@ -19,9 +20,7 @@ export default function Header() {
           <span className="text-sm text-gray-600 font-medium">{user?.name || 'Administrator'}</span>
         </div>
 
-        <h1 className="text-xl md:text-2xl font-semibold text-blue-800 tracking-wide select-none">
-          iJamaat
-        </h1>
+        <Logo size="md" showTagline={true} />
 
         <div className="flex items-center gap-4">
           <span className="hidden md:inline text-xs text-gray-400">

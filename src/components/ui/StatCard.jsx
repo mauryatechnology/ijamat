@@ -1,11 +1,11 @@
 export default function StatCard({ title, value, subtitle, color, icon: Icon, onClick }) {
   const colorMap = {
-    purple: 'bg-gradient-to-br from-purple-500 to-purple-700',
-    coral: 'bg-gradient-to-br from-red-400 to-rose-500',
-    green: 'bg-gradient-to-br from-emerald-500 to-green-600',
-    cyan: 'bg-gradient-to-br from-cyan-400 to-cyan-600',
-    blue: 'bg-gradient-to-br from-blue-500 to-blue-700',
-    amber: 'bg-gradient-to-br from-amber-400 to-amber-600',
+    purple: 'bg-gradient-to-br from-primary to-[#540505]',
+    coral: 'bg-gradient-to-br from-red-600 to-[#801010]',
+    green: 'bg-gradient-to-br from-emerald-600 to-green-800',
+    cyan: 'bg-gradient-to-br from-brand-charcoal to-[#0d0d0d]',
+    blue: 'bg-gradient-to-br from-[#aa8412] to-amber-700',
+    amber: 'bg-gradient-to-br from-amber-500 to-amber-700',
   }
 
   return (

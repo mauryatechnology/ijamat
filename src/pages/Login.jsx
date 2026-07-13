@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
 import { Lock, User, LogIn } from 'lucide-react'
+import Logo from '../components/ui/Logo'
 
 export default function Login() {
   const [userId, setUserId] = useState('')
@@ -27,54 +28,61 @@ export default function Login() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#1e2a3a] via-[#263544] to-[#1a2332] px-4">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-[#f5f4f3] px-4 relative overflow-hidden">
+      {/* Background glow elements */}
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
+        <div className="absolute top-[-10%] right-[-5%] w-[45%] h-[45%] bg-primary/5 rounded-full blur-3xl opacity-60 animate-pulse" />
+        <div className="absolute bottom-[-10%] left-[-5%] w-[45%] h-[45%] bg-primary/5 rounded-full blur-3xl opacity-60 animate-pulse" style={{ animationDelay: '2s' }} />
+      </div>
+
       <div className="w-full max-w-md">
-        {/* Logo */}
-        <div className="text-center mb-8">
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-amber-400 to-amber-600 text-white text-3xl font-bold mb-4 shadow-lg shadow-amber-500/30">
-            iJ
+        {/* Logo and branding */}
+        <div className="flex flex-col items-center mb-8">
+          <div className="mb-2">
+            <Logo size="lg" showTagline={true} />
           </div>
-          <h1 className="text-3xl font-bold text-white tracking-wide">iJamaat</h1>
-          <p className="text-blue-300/60 text-sm mt-1">Community Management System</p>
+          <h1 className="text-xl font-bold font-heading text-foreground mt-4">
+            Community Management System
+          </h1>
         </div>
 
         {/* Login Card */}
-        <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8 shadow-2xl">
-          <h2 className="text-xl font-semibold text-white text-center mb-6">Sign In</h2>
+        <div className="bg-white/80 backdrop-blur-md border border-border/50 rounded-2xl p-8 shadow-xl">
+          <h2 className="text-xl font-semibold text-foreground text-center mb-6">Sign In</h2>
 
           {error && (
-            <div className="mb-4 px-4 py-2.5 bg-red-500/20 border border-red-400/30 rounded-lg text-red-300 text-sm text-center">
+            <div className="mb-4 px-4 py-2.5 bg-red-500/10 border border-red-500/20 rounded-lg text-red-700 text-sm text-center">
               {error}
             </div>
           )}
 
           <form onSubmit={handleSubmit} className="space-y-5">
-            <div>
-              <label className="block text-sm text-blue-200/80 mb-1.5 font-medium">User ID</label>
+            <div className="form-group">
+              <label className="form-label">User ID</label>
               <div className="relative">
-                <User size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-white/40" />
+                <User size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
                 <input
                   type="text"
                   value={userId}
                   onChange={e => setUserId(e.target.value)}
                   placeholder="Enter your User ID"
-                  className="w-full pl-10 pr-4 py-2.5 bg-white/10 border border-white/20 rounded-lg text-white placeholder:text-white/30 outline-none focus:border-blue-400 focus:bg-white/15 transition-all"
+                  className="w-full pl-10 pr-4 py-2.5 bg-white border border-border rounded-lg text-foreground placeholder:text-gray-400 outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all text-sm"
                   required
                   autoFocus
                 />
               </div>
             </div>
 
-            <div>
-              <label className="block text-sm text-blue-200/80 mb-1.5 font-medium">Password</label>
+            <div className="form-group">
+              <label className="form-label">Password</label>
               <div className="relative">
-                <Lock size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-white/40" />
+                <Lock size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
                 <input
                   type="password"
                   value={password}
                   onChange={e => setPassword(e.target.value)}
                   placeholder="Enter your Password"
-                  className="w-full pl-10 pr-4 py-2.5 bg-white/10 border border-white/20 rounded-lg text-white placeholder:text-white/30 outline-none focus:border-blue-400 focus:bg-white/15 transition-all"
+                  className="w-full pl-10 pr-4 py-2.5 bg-white border border-border rounded-lg text-foreground placeholder:text-gray-400 outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all text-sm"
                   required
                 />
               </div>
@@ -83,7 +91,7 @@ export default function Login() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full py-2.5 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white rounded-lg font-medium flex items-center justify-center gap-2 transition-all shadow-lg shadow-blue-500/30 disabled:opacity-60"
+              className="w-full py-2.5 bg-primary hover:bg-primary-dark text-white rounded-lg font-medium flex items-center justify-center gap-2 transition-all shadow-md shadow-primary/20 hover:shadow-lg hover:shadow-primary/30 disabled:opacity-60 text-sm font-heading cursor-pointer"
             >
               {loading ? (
                 <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
@@ -96,8 +104,8 @@ export default function Login() {
           </form>
         </div>
 
-        <p className="text-center text-white/30 text-xs mt-6">
-          © Developed by Wonderful Developer
+        <p className="text-center text-gray-400 text-xs mt-8">
+          © Fakhri IT Services
         </p>
       </div>
     </div>

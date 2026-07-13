@@ -83,7 +83,7 @@ export default function FilterPanel({ fields, onFilter, title = 'Report Criteria
                       type="checkbox"
                       checked={!!values[field.key]}
                       onChange={e => handleChange(field.key, e.target.checked)}
-                      className="accent-blue-500 w-4 h-4"
+                      className="accent-primary w-4 h-4"
                     />
                     <span className="text-sm text-gray-600">{field.checkLabel || 'Yes'}</span>
                   </label>
