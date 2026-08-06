@@ -15,6 +15,7 @@ import FinanceOverview from './pages/finance/FinanceOverview'
 import ExpenditureManagement from './pages/finance/ExpenditureManagement'
 import InvestmentsAssets from './pages/finance/InvestmentsAssets'
 import ProfitLossReport from './pages/finance/ProfitLossReport'
+import AmilAppointment from './pages/appointment/AmilAppointment'
 
 // Phase 1 Maliyah Accounts imports
 import DailyCollection from './pages/maliyah/DailyCollection'
@@ -260,6 +261,9 @@ function AppRoutes() {
         <Route path="finance/expenditure" element={<ExpenditureManagement />} />
         <Route path="finance/investments" element={<InvestmentsAssets />} />
         <Route path="finance/profit-loss" element={<ProfitLossReport />} />
+
+        {/* Amil Saheb Appointment Module */}
+        <Route path="appointment" element={<AmilAppointment />} />
 
         {/* Deeniyah - Religious Affairs */}
         <Route path="deeniyah/amal-report" element={<AmalReport />} />

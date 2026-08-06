@@ -3,7 +3,7 @@ import { NavLink, useLocation } from 'react-router-dom'
 import { useSidebar } from '../../context/SidebarContext'
 import {
   LayoutDashboard, BookOpen, GraduationCap,
-  Wallet, Globe, Scale, Utensils,
+  Wallet, Globe, Scale, Utensils, UserCheck, Clock,
   Heart, Smartphone, Settings, LogOut, ChevronDown,
   Search, Menu, FileText, ClipboardList, Users, TrendingUp,
   UserPlus, DollarSign, CreditCard, BookOpenCheck,
@@ -402,6 +402,12 @@ const menuConfig = [
       { key: 'finance-investments', label: 'Investments & Assets', icon: Building, path: '/finance/investments' },
       { key: 'finance-profit-loss', label: 'Profit & Loss Statement', icon: FileText, path: '/finance/profit-loss' }
     ]
+  },
+  {
+    key: 'amil-appointment',
+    label: 'Amil Saheb Appointment',
+    icon: UserCheck,
+    path: '/appointment'
   },
   {
     key: 'app-mgmt',
