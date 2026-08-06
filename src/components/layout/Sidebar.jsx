@@ -562,13 +562,12 @@ export default function Sidebar() {
 
   return (
     <aside
-      className={`fixed top-0 left-0 h-screen z-50 flex flex-col transition-all duration-300 ${
+      className={`fixed top-0 left-0 h-screen z-50 flex flex-col transition-all duration-300 bg-white border-r border-slate-200 shadow-sm ${
         isCollapsed ? 'w-[64px]' : 'w-[270px]'
       }`}
-      style={{ background: '#0F172A' }}
     >
       {/* Logo */}
-      <div className="flex items-center gap-2 px-3 py-3 border-b border-slate-800/80 bg-slate-900/60">
+      <div className="flex items-center gap-2 px-3.5 py-3 border-b border-slate-200 bg-white">
         {isCollapsed ? (
           <img
             src="/favicon.png"
@@ -584,7 +583,7 @@ export default function Sidebar() {
         )}
         <button
           onClick={toggleSidebar}
-          className="ml-auto text-slate-400 hover:text-white p-1.5 rounded-lg hover:bg-slate-800 transition-colors"
+          className="ml-auto text-slate-500 hover:text-slate-900 p-1.5 rounded-lg hover:bg-slate-100 transition-colors"
           title="Toggle Navigation Sidebar"
         >
           <Menu size={18} />
@@ -593,15 +592,15 @@ export default function Sidebar() {
 
       {/* Search */}
       {!isCollapsed && (
-        <div className="px-3 py-2">
+        <div className="px-3 py-2 border-b border-slate-100 bg-slate-50/50">
           <div className="relative">
-            <Search size={14} className="absolute left-2.5 top-1/2 -translate-y-1/2 text-white/40" />
+            <Search size={14} className="absolute left-2.5 top-1/2 -translate-y-1/2 text-slate-400" />
             <input
               type="text"
-              placeholder="Search..."
+              placeholder="Search navigation..."
               value={search}
               onChange={e => setSearch(e.target.value)}
-              className="w-full pl-8 pr-3 py-1.5 bg-white/10 border border-white/10 rounded text-white text-xs placeholder:text-white/40 outline-none focus:border-blue-400/50"
+              className="w-full pl-8 pr-3 py-1.5 bg-slate-100 border border-slate-200 rounded-md text-slate-900 text-xs placeholder:text-slate-400 outline-none focus:border-blue-600 focus:bg-white transition-colors"
             />
           </div>
         </div>
@@ -615,12 +614,12 @@ export default function Sidebar() {
       </nav>
 
       {/* Logout */}
-      <div className="border-t border-white/10">
+      <div className="border-t border-slate-200 p-1 bg-slate-50/50">
         <button
           onClick={logout}
-          className="sidebar-item w-full text-red-400 hover:text-red-300 hover:bg-red-500/10"
+          className="sidebar-item w-full text-red-600 hover:text-red-700 hover:bg-red-50 rounded-md font-semibold"
         >
-          <LogOut size={18} className="shrink-0" />
+          <LogOut size={18} className="shrink-0 text-red-500" />
           {!isCollapsed && <span>Logout</span>}
         </button>
       </div>

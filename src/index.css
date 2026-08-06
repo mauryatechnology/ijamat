@@ -49,13 +49,13 @@
   --color-brand-white: #FFFFFF;
   --color-accent-blue: #3B82F6;
 
-  /* Sidebar Theme (Corporate Dark Navy Sidebar) */
-  --color-sidebar: #0F172A;
-  --color-sidebar-hover: #1E293B;
-  --color-sidebar-active: #2563EB;
-  --color-sidebar-text: #94A3B8;
-  --color-sidebar-text-active: #FFFFFF;
-  --color-sidebar-border: #1E293B;
+  /* Sidebar Theme (Corporate Light Sidebar) */
+  --color-sidebar: #FFFFFF;
+  --color-sidebar-hover: #F1F5F9;
+  --color-sidebar-active: #EFF6FF;
+  --color-sidebar-text: #475569;
+  --color-sidebar-text-active: #2563EB;
+  --color-sidebar-border: #E2E8F0;
   --color-sidebar-ring: #2563EB;
 
   /* Page Structure Mappings */
@@ -142,6 +142,7 @@
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     font-size: 0.8125rem;
+    font-weight: 500;
     border-left: 3px solid transparent;
     text-decoration: none;
   }
@@ -154,14 +155,14 @@
   .sidebar-item.active {
     background-color: var(--color-sidebar-active);
     color: var(--color-sidebar-text-active);
-    border-left-color: #60A5FA;
-    font-weight: 500;
+    border-left-color: var(--color-primary);
+    font-weight: 600;
   }
 
   .sidebar-submenu {
     overflow: hidden;
     transition: max-height 0.3s ease, opacity 0.3s ease;
-    background-color: rgba(15, 23, 42, 0.4);
+    background-color: #F8FAFC;
   }
 
   .sidebar-submenu .sidebar-item {
