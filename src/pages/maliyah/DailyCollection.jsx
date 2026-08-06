@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useData } from '../../context/DataContext'
 import { showToast } from '../../components/ui/Toast'
-import { CirclePlus } from 'lucide-react'
+import { PlusCircle } from 'lucide-react'
 
 export default function DailyCollection() {
   const { dropdownOptions, members, addCollection } = useData()

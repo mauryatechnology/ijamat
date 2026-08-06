@@ -7,7 +7,8 @@ import {
   Heart, Home, Smartphone, Settings, LogOut, ChevronDown,
   ChevronRight, Search, Menu, FileText, Send, MessageSquare,
   UserPlus, List, DollarSign, CreditCard, BookOpenCheck,
-  ClipboardList, PieChart, Calendar, Key, FolderOpen
+  ClipboardList, PieChart, Calendar, Key, FolderOpen, Mail,
+  ShieldCheck, Building2, Activity
 } from 'lucide-react'
 import { useAuth } from '../../context/AuthContext'
 
