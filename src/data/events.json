@@ -1,0 +1,12 @@
+[
+  {"id":1,"name":"Eid-ul-Adha Majlis","date":"2020-12-01","venue":"Masjid Hall","description":"Eid celebration and community gathering","rsvpCount":180,"totalInvited":250,"attendees":[]},
+  {"id":2,"name":"Milad un Nabi Celebration","date":"2020-12-15","venue":"Community Hall","description":"Birthday celebration of Prophet","rsvpCount":220,"totalInvited":250,"attendees":[]},
+  {"id":3,"name":"Urus Mubarak","date":"2021-01-10","venue":"Masjid Hall","description":"Annual remembrance ceremony","rsvpCount":195,"totalInvited":250,"attendees":[]},
+  {"id":4,"name":"Shehrullah Majlis - Day 1","date":"2021-04-13","venue":"Masjid Hall","description":"First day of Ramadan majlis","rsvpCount":200,"totalInvited":250,"attendees":[]},
+  {"id":5,"name":"Community Annual Meeting","date":"2020-11-25","venue":"Community Hall","description":"AGM for all HOF members","rsvpCount":35,"totalInvited":42,"attendees":[]},
+  {"id":6,"name":"Youth Sports Day","date":"2020-12-20","venue":"Sports Ground","description":"Annual sports competition","rsvpCount":45,"totalInvited":80,"attendees":[]},
+  {"id":7,"name":"Health Camp","date":"2020-11-28","venue":"Community Hall","description":"Free health checkup camp","rsvpCount":75,"totalInvited":250,"attendees":[]},
+  {"id":8,"name":"Quran Recitation","date":"2020-12-05","venue":"Masjid Hall","description":"Monthly Quran reading session","rsvpCount":90,"totalInvited":250,"attendees":[]},
+  {"id":9,"name":"Niyaz Jaman","date":"2020-12-10","venue":"FMB Hall","description":"Community feast","rsvpCount":210,"totalInvited":250,"attendees":[]},
+  {"id":10,"name":"Ashara Mubaraka - Day 1","date":"2021-08-10","venue":"Masjid Hall","description":"First day of Muharram sermons","rsvpCount":230,"totalInvited":250,"attendees":[]}
+]
