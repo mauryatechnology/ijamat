@@ -12,7 +12,7 @@ export default function MainLayout() {
       <Sidebar />
       <div
         className={`flex flex-col flex-1 min-h-screen transition-all duration-300 ${
-          isCollapsed ? 'ml-[60px]' : 'ml-[270px]'
+          isCollapsed ? 'ml-[64px]' : 'ml-[270px]'
         }`}
       >
         <Header />

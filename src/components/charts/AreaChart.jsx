@@ -1,6 +1,6 @@
 import { AreaChart as RechartsArea, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts'
 
-export default function AreaChartWidget({ data, dataKey = 'total', xKey = 'date', title, color = '#880808' }) {
+export default function AreaChartWidget({ data, dataKey = 'total', xKey = 'date', title, color = '#2563EB' }) {
   return (
     <div className="card">
       {title && (

@@ -28,45 +28,45 @@ export default function Login() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-[#f5f4f3] px-4 relative overflow-hidden">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-[#F4F6F8] px-4 relative overflow-hidden">
       {/* Background glow elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
-        <div className="absolute top-[-10%] right-[-5%] w-[45%] h-[45%] bg-primary/5 rounded-full blur-3xl opacity-60 animate-pulse" />
-        <div className="absolute bottom-[-10%] left-[-5%] w-[45%] h-[45%] bg-primary/5 rounded-full blur-3xl opacity-60 animate-pulse" style={{ animationDelay: '2s' }} />
+        <div className="absolute top-[-10%] right-[-5%] w-[45%] h-[45%] bg-blue-500/10 rounded-full blur-3xl opacity-60 animate-pulse" />
+        <div className="absolute bottom-[-10%] left-[-5%] w-[45%] h-[45%] bg-blue-500/10 rounded-full blur-3xl opacity-60 animate-pulse" style={{ animationDelay: '2s' }} />
       </div>
 
       <div className="w-full max-w-md">
         {/* Logo and branding */}
-        <div className="flex flex-col items-center mb-8">
+        <div className="flex flex-col items-center mb-6">
           <div className="mb-2">
             <Logo size="lg" showTagline={true} />
           </div>
-          <h1 className="text-xl font-bold font-heading text-foreground mt-4">
-            Community Management System
-          </h1>
+          <p className="text-xs font-semibold text-slate-500 uppercase tracking-widest mt-1">
+            Simplifying Operations
+          </p>
         </div>
 
         {/* Login Card */}
-        <div className="bg-white/80 backdrop-blur-md border border-border/50 rounded-2xl p-8 shadow-xl">
-          <h2 className="text-xl font-semibold text-foreground text-center mb-6">Sign In</h2>
+        <div className="bg-white border border-slate-200/80 rounded-2xl p-8 shadow-xl">
+          <h2 className="text-xl font-bold text-slate-900 text-center mb-6">Sign In to Jamaat Cloud</h2>
 
           {error && (
-            <div className="mb-4 px-4 py-2.5 bg-red-500/10 border border-red-500/20 rounded-lg text-red-700 text-sm text-center">
+            <div className="mb-4 px-4 py-2.5 bg-red-50 border border-red-200 rounded-lg text-red-700 text-xs font-semibold text-center">
               {error}
             </div>
           )}
 
           <form onSubmit={handleSubmit} className="space-y-5">
             <div className="form-group">
-              <label className="form-label">User ID</label>
+              <label className="text-xs font-semibold text-slate-700 mb-1 block">User ID</label>
               <div className="relative">
-                <User size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
+                <User size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
                 <input
                   type="text"
                   value={userId}
                   onChange={e => setUserId(e.target.value)}
-                  placeholder="Enter your User ID"
-                  className="w-full pl-10 pr-4 py-2.5 bg-white border border-border rounded-lg text-foreground placeholder:text-gray-400 outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all text-sm"
+                  placeholder="Enter User ID (admin)"
+                  className="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-300 rounded-lg text-slate-900 placeholder:text-slate-400 outline-none focus:bg-white focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 transition-all text-sm"
                   required
                   autoFocus
                 />
@@ -74,15 +74,15 @@ export default function Login() {
             </div>
 
             <div className="form-group">
-              <label className="form-label">Password</label>
+              <label className="text-xs font-semibold text-slate-700 mb-1 block">Password</label>
               <div className="relative">
-                <Lock size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
+                <Lock size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
                 <input
                   type="password"
                   value={password}
                   onChange={e => setPassword(e.target.value)}
-                  placeholder="Enter your Password"
-                  className="w-full pl-10 pr-4 py-2.5 bg-white border border-border rounded-lg text-foreground placeholder:text-gray-400 outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all text-sm"
+                  placeholder="Enter Password (hamid@123)"
+                  className="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-300 rounded-lg text-slate-900 placeholder:text-slate-400 outline-none focus:bg-white focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 transition-all text-sm"
                   required
                 />
               </div>
@@ -91,7 +91,7 @@ export default function Login() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full py-2.5 bg-primary hover:bg-primary-dark text-white rounded-lg font-medium flex items-center justify-center gap-2 transition-all shadow-md shadow-primary/20 hover:shadow-lg hover:shadow-primary/30 disabled:opacity-60 text-sm font-heading cursor-pointer"
+              className="w-full py-2.5 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold flex items-center justify-center gap-2 transition-all shadow-md shadow-blue-600/20 hover:shadow-lg disabled:opacity-60 text-sm cursor-pointer"
             >
               {loading ? (
                 <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
@@ -104,8 +104,8 @@ export default function Login() {
           </form>
         </div>
 
-        <p className="text-center text-gray-400 text-xs mt-8">
-          © Fakhri IT Services
+        <p className="text-center text-slate-400 text-xs mt-8">
+          © Jamaat Cloud • Simplifying Operations
         </p>
       </div>
     </div>

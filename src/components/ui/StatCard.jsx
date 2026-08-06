@@ -1,16 +1,16 @@
 export default function StatCard({ title, value, subtitle, color, icon: Icon, onClick }) {
   const colorMap = {
-    purple: 'bg-gradient-to-br from-primary to-[#540505]',
-    coral: 'bg-gradient-to-br from-red-600 to-[#801010]',
-    green: 'bg-gradient-to-br from-emerald-600 to-green-800',
-    cyan: 'bg-gradient-to-br from-brand-charcoal to-[#0d0d0d]',
-    blue: 'bg-gradient-to-br from-[#aa8412] to-amber-700',
+    blue: 'bg-gradient-to-br from-blue-600 to-blue-800',
+    purple: 'bg-gradient-to-br from-indigo-600 to-blue-700',
+    coral: 'bg-gradient-to-br from-blue-700 to-indigo-800',
+    green: 'bg-gradient-to-br from-emerald-600 to-emerald-800',
+    cyan: 'bg-gradient-to-br from-slate-800 to-slate-900',
     amber: 'bg-gradient-to-br from-amber-500 to-amber-700',
   }
 
   return (
     <div
-      className={`stat-card ${colorMap[color] || colorMap.purple}`}
+      className={`stat-card ${colorMap[color] || colorMap.blue}`}
       onClick={onClick}
     >
       <div className="flex items-start justify-between">
@@ -20,7 +20,7 @@ export default function StatCard({ title, value, subtitle, color, icon: Icon, on
           {subtitle && <p className="text-xs opacity-75 mt-1">{subtitle}</p>}
         </div>
         {Icon && (
-          <div className="p-2 bg-white/20 rounded-lg">
+          <div className="p-2 bg-white/20 rounded-lg shrink-0">
             <Icon size={24} />
           </div>
         )}

@@ -563,21 +563,29 @@ export default function Sidebar() {
   return (
     <aside
       className={`fixed top-0 left-0 h-screen z-50 flex flex-col transition-all duration-300 ${
-        isCollapsed ? 'w-[60px]' : 'w-[270px]'
+        isCollapsed ? 'w-[64px]' : 'w-[270px]'
       }`}
-      style={{ background: 'linear-gradient(180deg, #1e2a3a 0%, #263544 100%)' }}
+      style={{ background: '#0F172A' }}
     >
       {/* Logo */}
-      <div className="flex items-center gap-3 px-4 py-3 border-b border-white/10">
-        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center text-white font-bold text-sm shrink-0">
-          iJ
-        </div>
-        {!isCollapsed && (
-          <span className="text-white font-semibold text-lg tracking-wide">iJamaat</span>
+      <div className="flex items-center gap-2 px-3 py-3 border-b border-slate-800/80 bg-slate-900/60">
+        {isCollapsed ? (
+          <img
+            src="/favicon.png"
+            alt="Jamaat Cloud"
+            className="w-8 h-8 object-contain mx-auto transition-all"
+          />
+        ) : (
+          <img
+            src="/logo.png"
+            alt="Jamaat Cloud - Simplifying Operations"
+            className="h-9 object-contain max-w-[190px] transition-all"
+          />
         )}
         <button
           onClick={toggleSidebar}
-          className="ml-auto text-white/60 hover:text-white p-1 rounded transition-colors"
+          className="ml-auto text-slate-400 hover:text-white p-1.5 rounded-lg hover:bg-slate-800 transition-colors"
+          title="Toggle Navigation Sidebar"
         >
           <Menu size={18} />
         </button>

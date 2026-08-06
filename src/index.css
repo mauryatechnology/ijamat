@@ -1,82 +1,77 @@
 @import "tailwindcss";
 
 /* ==========================================================================
-   Fakhri IT Services Corporate Theme & iJamaat Custom Design Tokens
+   Jamaat Cloud - Simplifying Operations
+   Centralized Theme & Visual Design Tokens
    ========================================================================== */
 
 @theme {
-  /* Core Brand Colors */
-  --color-background: hsl(0 0% 100%);
-  --color-foreground: hsl(0 0% 8%);
+  /* Core Brand Colors (Jamaat Cloud Blue & Relatable Off-White) */
+  --color-background: #F4F6F8;
+  --color-foreground: #111827;
 
-  --color-card: hsl(0 0% 100%);
-  --color-card-foreground: hsl(0 0% 8%);
+  --color-card: #FFFFFF;
+  --color-card-foreground: #111827;
 
-  --color-popover: hsl(0 0% 100%);
-  --color-popover-foreground: hsl(0 0% 8%);
+  --color-popover: #FFFFFF;
+  --color-popover-foreground: #111827;
 
-  /* Primary Brand Red */
-  --color-primary: hsl(0 89% 28%);
-  --color-primary-dark: hsl(0 90% 20%);
-  --color-primary-foreground: hsl(0 0% 100%);
+  /* Primary Brand Blue */
+  --color-primary: #2563EB;
+  --color-primary-dark: #1D4ED8;
+  --color-primary-foreground: #FFFFFF;
 
   /* Secondary & Accents */
-  --color-secondary: hsl(20 10% 96%);
-  --color-secondary-foreground: hsl(0 0% 15%);
-  --color-muted: hsl(20 10% 96%);
-  --color-muted-foreground: hsl(0 0% 45%);
-  --color-accent: hsl(20 10% 96%);
-  --color-accent-foreground: hsl(0 0% 15%);
-  --color-destructive: hsl(0 84% 60%);
-  --color-destructive-foreground: hsl(0 0% 100%);
+  --color-secondary: #F1F5F9;
+  --color-secondary-foreground: #2563EB;
+  --color-muted: #F8FAFC;
+  --color-muted-foreground: #64748B;
+  --color-accent: #EFF6FF;
+  --color-accent-foreground: #1D4ED8;
+  --color-destructive: #EF4444;
+  --color-destructive-foreground: #FFFFFF;
 
   /* Borders & Inputs */
-  --color-border: hsl(20 10% 90%);
-  --color-input: hsl(20 10% 90%);
-  --color-ring: hsl(0 89% 28%);
+  --color-border: #E2E8F0;
+  --color-input: #E2E8F0;
+  --color-ring: #2563EB;
 
   --radius: 0.75rem;
 
   /* Extended Brand Palette */
-  --color-brand-red: hsl(0 89% 28%);
-  --color-brand-red-light: hsl(0 75% 45%);
-  --color-brand-red-dark: hsl(0 90% 20%);
-  --color-brand-black: hsl(0 0% 8%);
-  --color-brand-charcoal: hsl(0 0% 15%);
-  --color-brand-gray: hsl(0 0% 40%);
-  --color-brand-light-gray: hsl(0 0% 96%);
-  --color-brand-white: hsl(0 0% 100%);
-  --color-accent-red: hsl(0 85% 35%);
+  --color-brand-blue: #2563EB;
+  --color-brand-blue-light: #60A5FA;
+  --color-brand-blue-dark: #1D4ED8;
+  --color-brand-black: #111827;
+  --color-brand-charcoal: #1E293B;
+  --color-brand-gray: #64748B;
+  --color-brand-light-gray: #F8FAFC;
+  --color-brand-white: #FFFFFF;
+  --color-accent-blue: #3B82F6;
 
-  /* Sidebar Theme (Corporate Dark Sidebar) */
-  --color-sidebar: hsl(0 0% 10%);
-  --color-sidebar-hover: hsl(0 0% 15%);
-  --color-sidebar-active: hsl(0 89% 28%);
-  --color-sidebar-text: hsl(0 0% 85%);
-  --color-sidebar-text-active: hsl(0 0% 100%);
-  --color-sidebar-border: hsl(0 0% 15%);
-  --color-sidebar-ring: hsl(0 89% 28%);
+  /* Sidebar Theme (Corporate Dark Navy Sidebar) */
+  --color-sidebar: #0F172A;
+  --color-sidebar-hover: #1E293B;
+  --color-sidebar-active: #2563EB;
+  --color-sidebar-text: #94A3B8;
+  --color-sidebar-text-active: #FFFFFF;
+  --color-sidebar-border: #1E293B;
+  --color-sidebar-ring: #2563EB;
 
-  /* Page Structure Mappings (Maintains backwards compatibility with App elements) */
-  --color-page-bg: hsl(20 10% 96%);
-  --color-text-primary: hsl(0 0% 8%);
-  --color-text-secondary: hsl(0 0% 40%);
-  --color-header-bg: hsl(0 0% 100%);
+  /* Page Structure Mappings */
+  --color-page-bg: #F4F6F8;
+  --color-text-primary: #111827;
+  --color-text-secondary: #2563EB;
+  --color-header-bg: #FFFFFF;
 
   /* Functional Status Colors */
-  --color-info: hsl(200 95% 45%);
-  --color-warning: hsl(45 93% 47%);
-  --color-danger: hsl(0 84% 60%);
-  --color-success: hsl(142 70% 45%);
+  --color-info: #0284C7;
+  --color-warning: #D97706;
+  --color-danger: #EF4444;
+  --color-success: #10B981;
 
-  --color-table-header: hsl(0 89% 97%); /* Subtle pink/red tint for tables */
-  --color-table-alt: hsl(20 10% 98%);
-
-  /* Backward Compatibility Card Helpers */
-  --color-card-purple: #7c3aed;
-  --color-card-coral: #ef4444;
-  --color-card-green: #10b981;
-  --color-card-cyan: #06b6d4;
+  --color-table-header: #F8FAFC;
+  --color-table-alt: #FAFAFA;
 
   /* Typography */
   --font-sans: 'Inter', sans-serif;
@@ -100,8 +95,8 @@
 
   body {
     font-family: var(--font-sans);
-    background-color: var(--color-page-bg);
-    color: var(--color-text-primary);
+    background-color: var(--color-page-bg, #F4F6F8);
+    color: var(--color-text-primary, #111827);
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
   }
@@ -123,12 +118,12 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background: hsl(0 0% 80%);
+    background: #CBD5E1;
     border-radius: 3px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: var(--color-primary);
+    background: #2563EB;
   }
 }
 
@@ -159,14 +154,14 @@
   .sidebar-item.active {
     background-color: var(--color-sidebar-active);
     color: var(--color-sidebar-text-active);
-    border-left-color: var(--color-primary-foreground);
+    border-left-color: #60A5FA;
     font-weight: 500;
   }
 
   .sidebar-submenu {
     overflow: hidden;
     transition: max-height 0.3s ease, opacity 0.3s ease;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(15, 23, 42, 0.4);
   }
 
   .sidebar-submenu .sidebar-item {
@@ -185,30 +180,24 @@
     border-radius: 1rem;
     padding: 1.5rem;
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    box-shadow: 0 8px 24px -8px hsla(0, 0%, 0%, 0.08);
+    box-shadow: 0 8px 24px -8px rgba(15, 23, 42, 0.06);
     border: 1px solid var(--color-border);
   }
 
   .card-premium:hover {
     transform: translateY(-2px);
-    box-shadow: 0 16px 40px -12px hsla(0, 89%, 28%, 0.15);
-    border-color: rgba(136, 8, 8, 0.15);
+    box-shadow: 0 16px 40px -12px rgba(37, 99, 235, 0.12);
+    border-color: rgba(37, 99, 235, 0.2);
   }
 
   .card-glass {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(12px);
     border-radius: 1rem;
     padding: 1.5rem;
-    border: 1px solid rgba(230, 228, 226, 0.5);
+    border: 1px solid rgba(226, 232, 240, 0.8);
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    box-shadow: 0 4px 16px -4px hsla(0, 0%, 0%, 0.05);
-  }
-
-  .card-glass:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 16px 32px -8px hsla(0, 0%, 0%, 0.1);
-    border-color: rgba(136, 8, 8, 0.2);
+    box-shadow: 0 4px 16px -4px rgba(15, 23, 42, 0.05);
   }
 
   /* Stat Card */
@@ -220,12 +209,12 @@
     overflow: hidden;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
     cursor: pointer;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
   }
 
   .stat-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 30px rgba(136, 8, 8, 0.25);
+    box-shadow: 0 12px 30px rgba(37, 99, 235, 0.25);
   }
 
   .stat-card::after {
@@ -236,7 +225,7 @@
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.15);
   }
 
   /* Data Table */
@@ -256,35 +245,10 @@
     white-space: nowrap;
     cursor: pointer;
     user-select: none;
-    position: relative;
   }
 
   .data-table thead th:hover {
-    background-color: hsl(0 89% 94%);
-  }
-
-  .data-table thead .filter-row th {
-    background-color: hsl(20 10% 98%);
-    padding: 0.5rem 0.625rem;
-    cursor: default;
-  }
-
-  .data-table thead .filter-row input,
-  .data-table thead .filter-row select {
-    width: 100%;
-    padding: 0.35rem 0.5rem;
-    border: 1px solid var(--color-border);
-    border-radius: 0.375rem;
-    font-size: 0.75rem;
-    outline: none;
-    background: white;
-    transition: border-color 0.2s, box-shadow 0.2s;
-  }
-
-  .data-table thead .filter-row input:focus,
-  .data-table thead .filter-row select:focus {
-    border-color: var(--color-primary);
-    box-shadow: 0 0 0 2px rgba(136, 8, 8, 0.1);
+    background-color: #EFF6FF;
   }
 
   .data-table tbody tr {
@@ -297,7 +261,7 @@
   }
 
   .data-table tbody tr:hover {
-    background-color: hsl(0 89% 98.5%);
+    background-color: #EFF6FF;
   }
 
   .data-table tbody td {
@@ -323,18 +287,18 @@
 
   .btn:hover {
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
   }
 
   .btn-primary {
     background-color: var(--color-primary);
     color: white;
-    box-shadow: 0 2px 6px rgba(136, 8, 8, 0.15);
+    box-shadow: 0 2px 6px rgba(37, 99, 235, 0.2);
   }
 
   .btn-primary:hover {
     background-color: var(--color-primary-dark);
-    box-shadow: 0 6px 16px rgba(136, 8, 8, 0.25);
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
   }
 
   .btn-outline {
@@ -382,7 +346,7 @@
     font-family: var(--font-heading);
   }
 
-  .form-input {
+  .form-input, .form-select {
     padding: 0.5rem 0.875rem;
     border: 1px solid var(--color-border);
     border-radius: 0.5rem;
@@ -392,25 +356,9 @@
     transition: border-color 0.2s, box-shadow 0.2s;
   }
 
-  .form-input:focus {
+  .form-input:focus, .form-select:focus {
     border-color: var(--color-primary);
-    box-shadow: 0 0 0 3px rgba(136, 8, 8, 0.1);
-  }
-
-  .form-select {
-    padding: 0.5rem 0.875rem;
-    border: 1px solid var(--color-border);
-    border-radius: 0.5rem;
-    font-size: 0.875rem;
-    outline: none;
-    background: white;
-    cursor: pointer;
-    transition: border-color 0.2s, box-shadow 0.2s;
-  }
-
-  .form-select:focus {
-    border-color: var(--color-primary);
-    box-shadow: 0 0 0 3px rgba(136, 8, 8, 0.1);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
   }
 
   /* Page Headers */
@@ -420,7 +368,7 @@
     gap: 0.5rem;
     font-size: 1.35rem;
     font-weight: 600;
-    color: var(--color-text-secondary);
+    color: var(--color-text-primary);
     margin-bottom: 1.5rem;
     padding-bottom: 0.75rem;
     border-bottom: 1px solid var(--color-border);
@@ -431,7 +379,7 @@
   .card {
     background: white;
     border-radius: 0.75rem;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 4px rgba(15, 23, 42, 0.05);
     padding: 1.5rem;
     margin-bottom: 1.5rem;
     border: 1px solid var(--color-border);
@@ -458,53 +406,22 @@
   }
 
   .badge-success {
-    background-color: hsl(142 70% 92%);
-    color: hsl(142 76% 22%);
+    background-color: #DCFCE7;
+    color: #166534;
   }
 
   .badge-warning {
-    background-color: hsl(45 93% 92%);
-    color: hsl(45 93% 22%);
+    background-color: #FEF3C7;
+    color: #92400E;
   }
 
   .badge-danger {
-    background-color: hsl(0 84% 94%);
-    color: hsl(0 84% 28%);
+    background-color: #FEE2E2;
+    color: #991B1B;
   }
 
   .badge-info {
-    background-color: hsl(200 95% 92%);
-    color: hsl(200 95% 22%);
-  }
-
-  /* Toast Messages */
-  .toast {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    padding: 0.85rem 1.35rem;
-    border-radius: 0.5rem;
-    color: white;
-    font-size: 0.875rem;
-    z-index: 9999;
-    animation: slideIn 0.3s ease, fadeOut 0.3s ease 2.7s;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    font-family: var(--font-heading);
-  }
-
-  @keyframes slideIn {
-    from {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-
-  @keyframes fadeOut {
-    from { opacity: 1; }
-    to { opacity: 0; }
+    background-color: #E0F2FE;
+    color: #075985;
   }
 }

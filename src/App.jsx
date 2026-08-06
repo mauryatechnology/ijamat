@@ -1,4 +1,5 @@
 import { Routes, Route, Navigate } from 'react-router-dom'
+import { ThemeProvider } from './context/ThemeContext'
 import { AuthProvider, useAuth } from './context/AuthContext'
 import { DataProvider } from './context/DataContext'
 import { SidebarProvider } from './context/SidebarContext'
@@ -472,12 +473,14 @@ function AppRoutes() {
 
 export default function App() {
   return (
-    <AuthProvider>
-      <DataProvider>
-        <SidebarProvider>
-          <AppRoutes />
-        </SidebarProvider>
-      </DataProvider>
-    </AuthProvider>
+    <ThemeProvider>
+      <AuthProvider>
+        <DataProvider>
+          <SidebarProvider>
+            <AppRoutes />
+          </SidebarProvider>
+        </DataProvider>
+      </AuthProvider>
+    </ThemeProvider>
   )
 }
