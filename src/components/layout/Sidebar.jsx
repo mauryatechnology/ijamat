@@ -30,12 +30,6 @@ const menuConfig = [
     ]
   },
   {
-    key: 'staff-mgmt',
-    label: 'Staff Management',
-    icon: ShieldCheck,
-    path: '/staff/management'
-  },
-  {
     key: 'umoor-12',
     label: '12 Umoor',
     icon: Layers,
@@ -408,6 +402,12 @@ const menuConfig = [
       { key: 'finance-investments', label: 'Investments & Assets', icon: Building, path: '/finance/investments' },
       { key: 'finance-profit-loss', label: 'Profit & Loss Statement', icon: FileText, path: '/finance/profit-loss' }
     ]
+  },
+  {
+    key: 'staff-mgmt',
+    label: 'Staff Management',
+    icon: ShieldCheck,
+    path: '/staff/management'
   },
   {
     key: 'amil-appointment',
