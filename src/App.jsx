@@ -10,6 +10,12 @@ import MumineenList from './pages/mumineen/MumineenList'
 import AddMumineen from './pages/mumineen/AddMumineen'
 import MumineenRecord from './pages/mumineen/MumineenRecord'
 
+// Finance Management imports
+import FinanceOverview from './pages/finance/FinanceOverview'
+import ExpenditureManagement from './pages/finance/ExpenditureManagement'
+import InvestmentsAssets from './pages/finance/InvestmentsAssets'
+import ProfitLossReport from './pages/finance/ProfitLossReport'
+
 // Phase 1 Maliyah Accounts imports
 import DailyCollection from './pages/maliyah/DailyCollection'
 import IndividualLedger from './pages/maliyah/IndividualLedger'
@@ -248,6 +254,12 @@ function AppRoutes() {
         <Route path="mumineen/list" element={<MumineenList />} />
         <Route path="mumineen/add" element={<AddMumineen />} />
         <Route path="mumineen/record" element={<MumineenRecord />} />
+
+        {/* Finance Management Module */}
+        <Route path="finance/overview" element={<FinanceOverview />} />
+        <Route path="finance/expenditure" element={<ExpenditureManagement />} />
+        <Route path="finance/investments" element={<InvestmentsAssets />} />
+        <Route path="finance/profit-loss" element={<ProfitLossReport />} />
 
         {/* Deeniyah - Religious Affairs */}
         <Route path="deeniyah/amal-report" element={<AmalReport />} />

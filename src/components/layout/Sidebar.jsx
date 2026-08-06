@@ -5,7 +5,7 @@ import {
   LayoutDashboard, BookOpen, GraduationCap,
   Wallet, Globe, Scale, Utensils,
   Heart, Smartphone, Settings, LogOut, ChevronDown,
-  Search, Menu, FileText, ClipboardList, Users,
+  Search, Menu, FileText, ClipboardList, Users, TrendingUp,
   UserPlus, DollarSign, CreditCard, BookOpenCheck,
   Calendar, Key, FolderOpen, Mail,
   ShieldCheck, Building2, Activity, Layers, List, PieChart, BarChart3, Building
@@ -390,6 +390,17 @@ const menuConfig = [
           { key: 'booking-receipt', label: 'Print Receipt & Deposit', path: '/hall-booking/booking-receipt' }
         ]
       }
+    ]
+  },
+  {
+    key: 'finance-mgmt',
+    label: 'Finance Management',
+    icon: TrendingUp,
+    children: [
+      { key: 'finance-overview', label: 'Finance Overview', icon: PieChart, path: '/finance/overview' },
+      { key: 'finance-expenditure', label: 'Expenditure Register', icon: Wallet, path: '/finance/expenditure' },
+      { key: 'finance-investments', label: 'Investments & Assets', icon: Building, path: '/finance/investments' },
+      { key: 'finance-profit-loss', label: 'Profit & Loss Statement', icon: FileText, path: '/finance/profit-loss' }
     ]
   },
   {
