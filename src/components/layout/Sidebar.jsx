@@ -326,7 +326,7 @@ const menuConfig = [
     ]
   },
   {
-    key: 'kharejiyah',
+    key: 'kharejiyah-pr',
     label: 'Kharejiyah - PR',
     icon: Globe,
     children: [
@@ -334,7 +334,7 @@ const menuConfig = [
     ]
   },
   {
-    key: 'qaza',
+    key: 'qaza-legal',
     label: 'Qaza - Legal Affairs',
     icon: Scale,
     children: [
@@ -404,7 +404,7 @@ const menuConfig = [
     ]
   },
   {
-    key: 'iqtesadiyah',
+    key: 'iqtesadiyah-finance',
     label: 'Iqtesadiyah - Finance & Business',
     icon: BarChart3,
     children: [
@@ -420,7 +420,7 @@ const menuConfig = [
     ]
   },
   {
-    key: 'sehat',
+    key: 'sehat-health',
     label: 'Sehat - Health Affairs',
     icon: Heart,
     children: [

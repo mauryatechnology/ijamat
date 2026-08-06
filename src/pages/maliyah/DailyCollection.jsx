@@ -47,7 +47,7 @@ export default function DailyCollection() {
 
   return (
     <div>
-      <h2 className="page-header"><CirclePlus size={22} /> Daily Collection Entry</h2>
+      <h2 className="page-header"><PlusCircle size={22} /> Daily Collection Entry</h2>
       <div className="card">
         <form onSubmit={handleSubmit}>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4">
