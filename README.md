@@ -1,6 +1,6 @@
-# iJamaat by Fakhri - Comprehensive Community Management System
+# iJamaat Clone - Comprehensive Community Management System
 
-A fully functional, highly detailed frontend application for the **iJamaat Community Management System**. This application is built to replicate the complete iJamaat dashboard and all its interconnected modules. It operates entirely on the client-side using a sophisticated mock data architecture, making it lightweight and incredibly fast while maintaining the complex UI/UX of a full-scale ERP system.
+A fully functional, highly detailed frontend clone of the **iJamaat Community Management System**. This application is built to replicate the complete iJamaat dashboard and all its interconnected modules. It operates entirely on the client-side using a sophisticated mock data architecture, making it lightweight and incredibly fast while maintaining the complex UI/UX of a full-scale ERP system.
 
 ---
 
@@ -105,7 +105,7 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 1. Clone the repository and navigate to the project folder:
    ```bash
    git clone https://github.com/mauryatechnology/ijamat.git
-   cd ijamat
+   cd ijamaat-clone
    ```
 2. Install the dependencies:
    ```bash
