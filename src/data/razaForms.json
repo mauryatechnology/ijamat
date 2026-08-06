@@ -1,0 +1,10 @@
+[
+  {"id":1,"formNo":"RF-2024-001","sabilNo":"1","itsId":"40493729","name":"Mohd Hussain bhai Rangwala","mohalla":"Saifee Mohalla","type":"Safai","date":"2024-03-10","status":"Active","cancelledDate":null,"cancelReason":"","generatedBy":"admin"},
+  {"id":2,"formNo":"RF-2024-002","sabilNo":"3","itsId":"40673390","name":"Alihusain bhai Jasdanwala","mohalla":"Fakhri Mohalla","type":"Safai","date":"2024-03-15","status":"Active","cancelledDate":null,"cancelReason":"","generatedBy":"admin"},
+  {"id":3,"formNo":"RF-2024-003","sabilNo":"5","itsId":"30456789","name":"Taher bhai Saifuddin","mohalla":"Taheri Mohalla","type":"Raza","date":"2024-04-01","status":"Cancelled","cancelledDate":"2024-04-10","cancelReason":"Duplicate entry","generatedBy":"admin"},
+  {"id":4,"formNo":"RF-2024-004","sabilNo":"7","itsId":"70123456","name":"Burhanuddin bhai Contractor","mohalla":"Najmi Mohalla","type":"Raza","date":"2024-04-20","status":"Active","cancelledDate":null,"cancelReason":"","generatedBy":"admin"},
+  {"id":5,"formNo":"RF-2024-005","sabilNo":"10","itsId":"10456789","name":"Abbas bhai Rampurwala","mohalla":"Saifee Mohalla","type":"Safai","date":"2024-05-05","status":"Active","cancelledDate":null,"cancelReason":"","generatedBy":"admin"},
+  {"id":6,"formNo":"RF-2024-006","sabilNo":"14","itsId":"40789012","name":"Juzer bhai Petiwala","mohalla":"Saifee Mohalla","type":"Raza","date":"2024-06-12","status":"Active","cancelledDate":null,"cancelReason":"","generatedBy":"admin"},
+  {"id":7,"formNo":"RF-2024-007","sabilNo":"8","itsId":"80234567","name":"Qaidjoher bhai Indorewala","mohalla":"Fakhri Mohalla","type":"Safai","date":"2024-06-25","status":"Cancelled","cancelledDate":"2024-07-01","cancelReason":"Relocated","generatedBy":"admin"},
+  {"id":8,"formNo":"RF-2024-008","sabilNo":"16","itsId":"71012345","name":"Mufaddal bhai Ezzi","mohalla":"Hakimi Mohalla","type":"Raza","date":"2024-07-15","status":"Active","cancelledDate":null,"cancelReason":"","generatedBy":"admin"}
+]

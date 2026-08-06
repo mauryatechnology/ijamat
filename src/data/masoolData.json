@@ -1,0 +1,25 @@
+{
+  "masools": [
+    {"id":1,"itsId":"40493729","name":"Mohd Hussain bhai Rangwala","zone":"Zone A","mohalla":"Saifee Mohalla","assignedSabils":["1","2","6","10","14"],"phone":"9876543210","status":"Active"},
+    {"id":2,"itsId":"70123456","name":"Burhanuddin bhai Contractor","zone":"Zone B","mohalla":"Najmi Mohalla","assignedSabils":["7","11","13","15"],"phone":"9876543220","status":"Active"},
+    {"id":3,"itsId":"40673390","name":"Alihusain bhai Jasdanwala","zone":"Zone C","mohalla":"Fakhri Mohalla","assignedSabils":["3","8","12","17"],"phone":"9876543214","status":"Active"},
+    {"id":4,"itsId":"30456789","name":"Taher bhai Saifuddin","zone":"Zone D","mohalla":"Taheri Mohalla","assignedSabils":["5","9","16","18"],"phone":"9876543216","status":"Active"}
+  ],
+  "musaeeds": [
+    {"id":1,"itsId":"60681946","name":"Irfan bhai Zoeb","masool":"Mohd Hussain bhai Rangwala","zone":"Zone A","phone":"9876543215","status":"Active"},
+    {"id":2,"itsId":"10456789","name":"Abbas bhai Rampurwala","masool":"Mohd Hussain bhai Rangwala","zone":"Zone A","phone":"9876543224","status":"Active"},
+    {"id":3,"itsId":"50890123","name":"Husain bhai Nooruddin","masool":"Burhanuddin bhai Contractor","zone":"Zone B","phone":"9876543229","status":"Active"},
+    {"id":4,"itsId":"30678901","name":"Shabbir bhai Lukmani","masool":"Alihusain bhai Jasdanwala","zone":"Zone C","phone":"9876543227","status":"Active"},
+    {"id":5,"itsId":"71012345","name":"Mufaddal bhai Ezzi","masool":"Taher bhai Saifuddin","zone":"Zone D","phone":"9876543230","status":"Active"}
+  ],
+  "masoolaats": [
+    {"id":1,"itsId":"20363636","name":"Fatema bai Rangwala","zone":"Zone A","mohalla":"Saifee Mohalla","assignedSabils":["1","6","10"],"phone":"9876543211","status":"Active"},
+    {"id":2,"itsId":"30456790","name":"Maryam bai Saifuddin","zone":"Zone D","mohalla":"Taheri Mohalla","assignedSabils":["5","9"],"phone":"9876543217","status":"Active"},
+    {"id":3,"itsId":"50789124","name":"Zainab bai Hakimuddin","zone":"Zone A","mohalla":"Saifee Mohalla","assignedSabils":["2","14"],"phone":"9876543219","status":"Active"}
+  ],
+  "musaedaats": [
+    {"id":1,"itsId":"10456790","name":"Fatema bai Rampurwala","masoolaat":"Fatema bai Rangwala","zone":"Zone A","phone":"9876543225","status":"Active"},
+    {"id":2,"itsId":"60901234","name":"Tayyeba bai Nooruddin","masoolaat":"Maryam bai Saifuddin","zone":"Zone D","phone":"","status":"Active"},
+    {"id":3,"itsId":"70123457","name":"Ruqaiya bai Contractor","masoolaat":"Fatema bai Rangwala","zone":"Zone A","phone":"","status":"Active"}
+  ]
+}

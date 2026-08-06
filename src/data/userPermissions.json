@@ -1,0 +1,14 @@
+{
+  "users": [
+    {"id":1,"userId":"admin","name":"Administrator","role":"Super Admin","category":"Admin","permissions":["all"],"extraPermissions":[],"lastLogin":"2024-08-06T10:28:00","status":"Active"},
+    {"id":2,"userId":"collector1","name":"Akbar bhai Rampura wala","role":"Collector","category":"Finance","permissions":["daily_collection","receipt_print","due_list","collection_report","day_book"],"extraPermissions":["sabil_report","hof_list"],"lastLogin":"2024-08-05T09:00:00","status":"Active"},
+    {"id":3,"userId":"collector2","name":"Hussain bhai Collector","role":"Collector","category":"Finance","permissions":["daily_collection","receipt_print","due_list"],"extraPermissions":[],"lastLogin":"2024-08-04T11:30:00","status":"Active"},
+    {"id":4,"userId":"fmb_admin","name":"Mufaddal bhai Zone B","role":"Admin","category":"FMB","permissions":["fmb_menu","fmb_registration","fmb_dispatch","thali_master","thali_report"],"extraPermissions":["niyaz_report"],"lastLogin":"2024-08-06T08:00:00","status":"Active"},
+    {"id":5,"userId":"masool1","name":"Mohd Hussain bhai Rangwala","role":"Masool","category":"Deeniyah","permissions":["sabaq_attendance","sabaq_report"],"extraPermissions":["member_list"],"lastLogin":"2024-08-03T07:00:00","status":"Active"},
+    {"id":6,"userId":"viewer1","name":"Taher bhai Saifuddin","role":"Viewer","category":"General","permissions":["dashboard","hof_list","member_list"],"extraPermissions":[],"lastLogin":"2024-07-28T14:00:00","status":"Active"},
+    {"id":7,"userId":"deactive1","name":"Old User Account","role":"Viewer","category":"General","permissions":["dashboard"],"extraPermissions":[],"lastLogin":"2023-12-01T10:00:00","status":"Inactive"}
+  ],
+  "roles": ["Super Admin", "Admin", "Collector", "Masool", "Musaeed", "Viewer"],
+  "categories": ["Admin", "Finance", "FMB", "Deeniyah", "Talimiyah", "Dakheliyah", "General"],
+  "allPermissions": ["all","dashboard","daily_collection","receipt_print","due_list","due_form","noc_form","collection_report","collection_detail","collection_summary","day_book","individual_ledger","hof_list","mumineen_filter","sabil_entry","sabil_report","sabil_edit","takhmeen","member_list","add_member","send_message","message_report","sabaq_attendance","sabaq_report","fmb_menu","fmb_registration","fmb_dispatch","thali_master","thali_report","niyaz_report","hall_booking","booking_report","doctors_directory","qardan_hasana","qaza_report","survey_report","voucher_entry","muwasaat","change_password","edit_user","manage_masool","visit_entry","visit_report","photo_upload","document_upload","live_event"]
+}

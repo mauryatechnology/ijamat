@@ -1,0 +1,17 @@
+[
+  {"id":1,"thaliNo":"T-001","sabilNo":"1","name":"Mohd Hussain bhai Rangwala","date":"2024-08-05","rating":5,"comment":"Excellent quality, very tasty","skipped":false,"skipReason":""},
+  {"id":2,"thaliNo":"T-002","sabilNo":"2","name":"Akbarali bhai Udaipurwala","date":"2024-08-05","rating":4,"comment":"Good food, slightly late delivery","skipped":false,"skipReason":""},
+  {"id":3,"thaliNo":"T-003","sabilNo":"3","name":"Alihusain bhai Jasdanwala","date":"2024-08-05","rating":3,"comment":"Average taste today","skipped":false,"skipReason":""},
+  {"id":4,"thaliNo":"T-004","sabilNo":"4","name":"Irfan bhai Zoeb","date":"2024-08-05","rating":0,"comment":"","skipped":true,"skipReason":"Out of town"},
+  {"id":5,"thaliNo":"T-005","sabilNo":"5","name":"Taher bhai Saifuddin","date":"2024-08-05","rating":5,"comment":"Perfect as always","skipped":false,"skipReason":""},
+  {"id":6,"thaliNo":"T-006","sabilNo":"6","name":"Mustafa bhai Hakimuddin","date":"2024-08-05","rating":4,"comment":"Good","skipped":false,"skipReason":""},
+  {"id":7,"thaliNo":"T-007","sabilNo":"7","name":"Burhanuddin bhai Contractor","date":"2024-08-05","rating":0,"comment":"","skipped":true,"skipReason":"Medical reason"},
+  {"id":8,"thaliNo":"T-010","sabilNo":"10","name":"Abbas bhai Rampurwala","date":"2024-08-05","rating":4,"comment":"Nice biryani","skipped":false,"skipReason":""},
+  {"id":9,"thaliNo":"T-012","sabilNo":"12","name":"Shabbir bhai Lukmani","date":"2024-08-05","rating":5,"comment":"Loved the kheer","skipped":false,"skipReason":""},
+  {"id":10,"thaliNo":"T-014","sabilNo":"14","name":"Juzer bhai Petiwala","date":"2024-08-05","rating":0,"comment":"","skipped":true,"skipReason":"Travel"},
+  {"id":11,"thaliNo":"T-001","sabilNo":"1","name":"Mohd Hussain bhai Rangwala","date":"2024-08-04","rating":4,"comment":"Good quality","skipped":false,"skipReason":""},
+  {"id":12,"thaliNo":"T-003","sabilNo":"3","name":"Alihusain bhai Jasdanwala","date":"2024-08-04","rating":4,"comment":"Better than yesterday","skipped":false,"skipReason":""},
+  {"id":13,"thaliNo":"T-005","sabilNo":"5","name":"Taher bhai Saifuddin","date":"2024-08-04","rating":5,"comment":"Excellent","skipped":false,"skipReason":""},
+  {"id":14,"thaliNo":"T-010","sabilNo":"10","name":"Abbas bhai Rampurwala","date":"2024-08-04","rating":3,"comment":"Ok","skipped":false,"skipReason":""},
+  {"id":15,"thaliNo":"T-016","sabilNo":"16","name":"Mufaddal bhai Ezzi","date":"2024-08-04","rating":5,"comment":"Great food","skipped":false,"skipReason":""}
+]

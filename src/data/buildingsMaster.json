@@ -1,0 +1,9 @@
+[
+  {"id":1,"name":"Saifee Apartments","mohalla":"Saifee Mohalla","address":"Main Road, Saifee Mohalla","totalFlats":24,"type":"Residential","status":"Active"},
+  {"id":2,"name":"Najmi Complex","mohalla":"Najmi Mohalla","address":"Market Street, Najmi Mohalla","totalFlats":12,"type":"Mixed","status":"Active"},
+  {"id":3,"name":"Fakhri Heights","mohalla":"Fakhri Mohalla","address":"Station Road, Fakhri Mohalla","totalFlats":18,"type":"Residential","status":"Active"},
+  {"id":4,"name":"Hakimi Tower","mohalla":"Hakimi Mohalla","address":"College Road, Hakimi Mohalla","totalFlats":8,"type":"Commercial","status":"Active"},
+  {"id":5,"name":"Taheri Residency","mohalla":"Taheri Mohalla","address":"Hospital Road, Taheri Mohalla","totalFlats":16,"type":"Residential","status":"Active"},
+  {"id":6,"name":"Burhaniyah Arcade","mohalla":"Saifee Mohalla","address":"Bazaar Road, Saifee Mohalla","totalFlats":10,"type":"Commercial","status":"Active"},
+  {"id":7,"name":"Noorani Villa","mohalla":"Najmi Mohalla","address":"School Lane, Najmi Mohalla","totalFlats":6,"type":"Residential","status":"Inactive"}
+]
