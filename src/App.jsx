@@ -6,6 +6,9 @@ import { SidebarProvider } from './context/SidebarContext'
 import MainLayout from './components/layout/MainLayout'
 import Login from './pages/Login'
 import Dashboard from './pages/Dashboard'
+import MumineenList from './pages/mumineen/MumineenList'
+import AddMumineen from './pages/mumineen/AddMumineen'
+import MumineenRecord from './pages/mumineen/MumineenRecord'
 
 // Phase 1 Maliyah Accounts imports
 import DailyCollection from './pages/maliyah/DailyCollection'
@@ -240,6 +243,11 @@ function AppRoutes() {
       }>
         <Route index element={<Navigate to="/dashboard" replace />} />
         <Route path="dashboard" element={<Dashboard />} />
+
+        {/* Mumineen Module */}
+        <Route path="mumineen/list" element={<MumineenList />} />
+        <Route path="mumineen/add" element={<AddMumineen />} />
+        <Route path="mumineen/record" element={<MumineenRecord />} />
 
         {/* Deeniyah - Religious Affairs */}
         <Route path="deeniyah/amal-report" element={<AmalReport />} />

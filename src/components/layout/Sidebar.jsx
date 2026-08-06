@@ -5,7 +5,7 @@ import {
   LayoutDashboard, BookOpen, GraduationCap,
   Wallet, Globe, Scale, Utensils,
   Heart, Smartphone, Settings, LogOut, ChevronDown,
-  Search, Menu, FileText, ClipboardList,
+  Search, Menu, FileText, ClipboardList, Users,
   UserPlus, DollarSign, CreditCard, BookOpenCheck,
   Calendar, Key, FolderOpen, Mail,
   ShieldCheck, Building2, Activity, Layers, List, PieChart, BarChart3, Building
@@ -18,6 +18,16 @@ const menuConfig = [
     label: 'Dashboard',
     icon: LayoutDashboard,
     path: '/dashboard'
+  },
+  {
+    key: 'mumineen',
+    label: 'Mumineen',
+    icon: Users,
+    children: [
+      { key: 'mumineen-list', label: 'Mumineen List', icon: List, path: '/mumineen/list' },
+      { key: 'add-mumineen', label: 'Add Mumineen', icon: UserPlus, path: '/mumineen/add' },
+      { key: 'mumineen-record', label: 'Mumineen Record', icon: FileText, path: '/mumineen/record' }
+    ]
   },
   {
     key: 'umoor-12',
