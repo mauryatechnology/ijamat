@@ -208,6 +208,20 @@ export function DataProvider({ children }) {
     }))
   }, [])
 
+  const addStaffUser = useCallback((user) => {
+    setUserPermissions(prev => ({
+      ...prev,
+      users: [{ id: Date.now(), status: 'Active', lastLogin: 'Never', ...user }, ...prev.users]
+    }))
+  }, [])
+
+  const deleteStaffUser = useCallback((userId) => {
+    setUserPermissions(prev => ({
+      ...prev,
+      users: prev.users.filter(u => u.id !== userId)
+    }))
+  }, [])
+
   const addAccountTransaction = useCallback((txn) => {
     setAccountsLedger(prev => ({
       ...prev,
@@ -286,7 +300,7 @@ export function DataProvider({ children }) {
       addDish, addDishCategory,
       addInventoryItem, updateInventoryItem,
       addBuilding,
-      updateUserPermission,
+      updateUserPermission, addStaffUser, deleteStaffUser,
       addAccountTransaction,
       addTakhmeen, updateTakhmeen,
       updateSabilMobile, removeSabil,

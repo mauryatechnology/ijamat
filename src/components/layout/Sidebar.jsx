@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import { useSidebar } from '../../context/SidebarContext'
 import {
-  LayoutDashboard, BookOpen, GraduationCap,
+  LayoutDashboard, BookOpen, GraduationCap, Send,
   Wallet, Globe, Scale, Utensils, UserCheck, Clock,
   Heart, Smartphone, Settings, LogOut, ChevronDown,
   Search, Menu, FileText, ClipboardList, Users, TrendingUp,
@@ -28,6 +28,12 @@ const menuConfig = [
       { key: 'add-mumineen', label: 'Add Mumineen', icon: UserPlus, path: '/mumineen/add' },
       { key: 'mumineen-record', label: 'Mumineen Record', icon: FileText, path: '/mumineen/record' }
     ]
+  },
+  {
+    key: 'staff-mgmt',
+    label: 'Staff Management',
+    icon: ShieldCheck,
+    path: '/staff/management'
   },
   {
     key: 'umoor-12',
@@ -369,7 +375,7 @@ const menuConfig = [
           },
           {
             key: 'fmb-app',
-            label: 'App',
+            label: 'FMB Mobile App Operations',
             children: [
               { key: 'feedback-summary', label: 'Feedback Summary', path: '/fmb/app/feedback-summary' },
               { key: 'skip-thali-report', label: 'Skip Thali Report', path: '/fmb/app/skip-thali-report' },
@@ -410,15 +416,26 @@ const menuConfig = [
     path: '/appointment'
   },
   {
+    key: 'broadcast-mgmt',
+    label: 'Broadcast Message',
+    icon: Send,
+    children: [
+      { key: 'send-msg-bc', label: 'Send WhatsApp / SMS Broadcast', icon: Send, path: '/dakheliyah/send-message' },
+      { key: 'msg-rep-bc', label: 'Message Delivery Log', icon: FileText, path: '/dakheliyah/message-report' },
+      { key: 'circular-bc', label: 'Official Circulars', icon: ClipboardList, path: '/dakheliyah/circular-announce' },
+      { key: 'push-bc', label: 'Mobile App Push Broadcast', icon: Mail, path: '/app/notification-center' }
+    ]
+  },
+  {
     key: 'app-mgmt',
-    label: 'Mobile App',
+    label: 'Mobile App Management',
     icon: Smartphone,
     children: [
-      { key: 'rsvp-rep', label: 'RSVP Report', path: '/app/rsvp-report' },
-      { key: 'install-summ', label: 'App Install Summary', path: '/app/install-summary' },
-      { key: 'install-list', label: 'App Install Detail List', path: '/app/install-list' },
+      { key: 'rsvp-rep', label: 'Miqaat RSVP Report', path: '/app/rsvp-report' },
+      { key: 'install-summ', label: 'App Install Analytics', path: '/app/install-summary' },
+      { key: 'install-list', label: 'App Users Directory', path: '/app/install-list' },
       { key: 'push-notify', label: 'Push Notification Broadcast', path: '/app/notification-center' },
-      { key: 'user-activity', label: 'User App Activity Audit', path: '/app/user-activity-log' }
+      { key: 'user-activity', label: 'App Activity Audit Log', path: '/app/user-activity-log' }
     ]
   },
   {

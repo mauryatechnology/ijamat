@@ -16,6 +16,7 @@ import ExpenditureManagement from './pages/finance/ExpenditureManagement'
 import InvestmentsAssets from './pages/finance/InvestmentsAssets'
 import ProfitLossReport from './pages/finance/ProfitLossReport'
 import AmilAppointment from './pages/appointment/AmilAppointment'
+import StaffManagement from './pages/staff/StaffManagement'
 
 // Phase 1 Maliyah Accounts imports
 import DailyCollection from './pages/maliyah/DailyCollection'
@@ -264,6 +265,9 @@ function AppRoutes() {
 
         {/* Amil Saheb Appointment Module */}
         <Route path="appointment" element={<AmilAppointment />} />
+
+        {/* Staff Management Module */}
+        <Route path="staff/management" element={<StaffManagement />} />
 
         {/* Deeniyah - Religious Affairs */}
         <Route path="deeniyah/amal-report" element={<AmalReport />} />
